@@ -8,3 +8,13 @@ D:\Programmi\Programmi seri\ProgettoNatale\ProgettoNatale\obj\Debug\ProgettoNata
 D:\Programmi\Programmi seri\ProgettoNatale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.CoreCompileInputs.cache
 D:\Programmi\Programmi seri\ProgettoNatale\ProgettoNatale\obj\Debug\ProgettoNatale.exe
 D:\Programmi\Programmi seri\ProgettoNatale\ProgettoNatale\obj\Debug\ProgettoNatale.pdb
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\bin\Debug\ProgettoNatale.exe.config
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\bin\Debug\ProgettoNatale.exe
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\bin\Debug\ProgettoNatale.pdb
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.AssemblyReference.cache
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Form1.resources
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Properties.Resources.resources
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.GenerateResource.cache
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.CoreCompileInputs.cache
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.exe
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.pdb

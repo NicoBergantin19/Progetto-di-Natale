@@ -14,7 +14,8 @@ namespace ProgettoNatale
 {
     public partial class Form1 : Form
     {
-        SqlConnection connection;
+        SqlConnection connectionDatabase;
+        SqlConnection connectionTabelle;
         public Form1()
         {
             InitializeComponent();
@@ -22,13 +23,13 @@ namespace ProgettoNatale
 
         private void button1_Click(object sender, EventArgs e)
         {
-            connection = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
+            connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
             try
             {
-                connection.Open();
-                Nations_Table(connection);
-                Kids_Table(connection);
-                MessageBox.Show("Connessione eseguita correttamente","", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                connectionTabelle.Open();
+                Nations_Table(connectionTabelle);
+                Kids_Table(connectionTabelle);
+                MessageBox.Show("Connessione eseguita correttamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException error)
             {
@@ -56,7 +57,7 @@ namespace ProgettoNatale
                 }
             }
             else
-                reader.Close();                   
+                reader.Close();
         }
 
         internal void Kids_Table(SqlConnection connection)
@@ -76,7 +77,7 @@ namespace ProgettoNatale
                 }
                 catch (SqlException error)
                 {
-                    MessageBox.Show("Errore nel generare la tabella nazioni: " + error.ToString());
+                    MessageBox.Show("Errore nel generare la tabella dei Bambini: " + error.ToString());
                 }
             }
             else
@@ -85,7 +86,31 @@ namespace ProgettoNatale
 
         internal void Insert_Nations(SqlConnection connection)
         {
-            string insert_nations = "INSERT INTO Nazioni (ID, Nome, Continente, Fuso_Orario) VALUES "
+            //string insert_nations = "INSERT INTO Nazioni (ID, Nome, Continente, Fuso_Orario) VALUES "
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
+            try
+            {
+                connectionDatabase.Open();
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.ToString());
+            }
+            string query = "IF NOT EXISTS(SELECT * FROM sys.databases where name = 'Natale') CREATE DATABASE Natale";
+            SqlCommand cmd = new SqlCommand(query, connectionDatabase);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                connectionDatabase.Close();
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show("Errore nel generare il database: " + error.ToString());
+            }
         }
     }
 }
