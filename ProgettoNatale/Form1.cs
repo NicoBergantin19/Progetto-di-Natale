@@ -14,8 +14,10 @@ namespace ProgettoNatale
 {
     public partial class Form1 : Form
     {
-        SqlConnection connectionDatabase;
-        SqlConnection connectionTabelle;
+        SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
+        //SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
+        SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
+        //SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
         public Form1()
         {
             InitializeComponent();
@@ -23,8 +25,6 @@ namespace ProgettoNatale
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
-            connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True");
             try
             {
                 connectionTabelle.Open();
@@ -46,7 +46,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_nazioni = "CREATE TABLE Nazioni(ID int IDENTITY(1,1), Nome varchar(30) NOT NULL, Continente varchar(30), Fuso_Orario datetime, PRIMARY KEY(ID));";
+                string tab_nazioni = "CREATE TABLE Nazioni(ID_Nazione int IDENTITY(1,1), Nome varchar(30) NOT NULL, Continente varchar(30), Fuso_Orario datetime, PRIMARY KEY(ID));";
                 SqlCommand cmd = new SqlCommand(tab_nazioni, connection);
                 try
                 {
@@ -70,7 +70,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_nazioni = "CREATE TABLE Bambini(ID int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL, Nazione varchar(30), Bonta int PRIMARY KEY(ID));";
+                string tab_nazioni = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL, Nazione varchar(30), Bonta int PRIMARY KEY(ID_Bambino));";
                 SqlCommand cmd = new SqlCommand(tab_nazioni, connection);
                 try
                 {
@@ -85,15 +85,9 @@ namespace ProgettoNatale
                 reader.Close();
         }
 
-        internal void Insert_Nations(SqlConnection connection)
-        {
-            //string insert_nations = "INSERT INTO Nazioni (ID, Nome, Continente, Fuso_Orario) VALUES "
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            //connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
-            connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True");
+            
             try
             {
                 connectionDatabase.Open();
