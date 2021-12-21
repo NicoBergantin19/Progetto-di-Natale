@@ -52,6 +52,12 @@
     <Compile Include="Azioni.Designer.cs">
       <DependentUpon>Azioni.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bambini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bambini.Designer.cs">
+      <DependentUpon>Bambini.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Azioni.resx">
+      <DependentUpon>Azioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bambini.resx">
+      <DependentUpon>Bambini.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,7 +98,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="immagini\Sfondo_Azioni.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="immagini\animated-santa-claus.gif" />
   </ItemGroup>

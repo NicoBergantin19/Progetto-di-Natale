@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ProgettoNatale
 {
-    public partial class Azioni : Form
+    public partial class Bambini : Form
     {
-        public Azioni()
+        public Bambini()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void View_Kids_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -23,9 +23,13 @@ namespace ProgettoNatale
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Quando si preme il bottone "Accedi" viene creato il Databse "Natale" con 
+        /// le varie tabelle utili
+        /// </summary>
+        private void button1_Click(object sender, EventArgs e)  
         {
-            try
+            try    
             {
                 connectionTabelle.Open();
                 Nations_Table(connectionTabelle);
@@ -37,16 +41,17 @@ namespace ProgettoNatale
                 MessageBox.Show(error.ToString());
             }
         }
-        internal void Nations_Table(SqlConnection connection)
+        internal void Nations_Table(SqlConnection connection)   //Creazione della tabella "Nazioni" 
         {
-            string query = @"SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Nazioni';";
+            string query = @"SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Nazioni';"; //query per vedere se esiste una tabella chiamata "Nazioni"
+                                                                                                     //se il reader restituisce delle righe vuol dire che esiste
             SqlCommand controllo = new SqlCommand(query, connection);
             SqlDataReader reader = controllo.ExecuteReader();
-            if (reader.HasRows == false)
+            if (reader.HasRows == false)    //Controllo esistenza tabella
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_nazioni = "CREATE TABLE Nazioni(ID_Nazione int IDENTITY(1,1), Nome varchar(30) NOT NULL, Continente varchar(30), Fuso_Orario datetime, PRIMARY KEY(ID));";
+                string tab_nazioni = "CREATE TABLE Nazioni(ID_Nazione int IDENTITY(1,1), Nome varchar(30) NOT NULL, Continente varchar(30), Fuso_Orario datetime, PRIMARY KEY(ID));"; //query creazione tabella
                 SqlCommand cmd = new SqlCommand(tab_nazioni, connection);
                 try
                 {
@@ -61,7 +66,7 @@ namespace ProgettoNatale
                 reader.Close();
         }
 
-        internal void Kids_Table(SqlConnection connection)
+        internal void Kids_Table(SqlConnection connection)  //Creazione della tabella "Bambini" 
         {
             string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Bambini';";
             SqlCommand controllo = new SqlCommand(query, connection);
@@ -83,11 +88,12 @@ namespace ProgettoNatale
             }
             else
                 reader.Close();
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            
+        {           
             try
             {
                 connectionDatabase.Open();
