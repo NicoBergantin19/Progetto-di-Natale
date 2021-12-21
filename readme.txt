@@ -1,0 +1,1 @@
+Appena si accede al codice ricordarsi di cambiare le stringhe di connessione all'interno degli eventi "Form1_Load" e "Button1_Click"

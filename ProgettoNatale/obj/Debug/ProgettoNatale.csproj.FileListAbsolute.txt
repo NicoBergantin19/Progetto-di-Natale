@@ -18,3 +18,14 @@ D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.CoreCompileInputs.cache
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.exe
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.pdb
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\bin\Debug\ProgettoNatale.exe.config
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\bin\Debug\ProgettoNatale.exe
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\bin\Debug\ProgettoNatale.pdb
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.AssemblyReference.cache
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.SuggestedBindingRedirects.cache
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Form1.resources
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Properties.Resources.resources
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.GenerateResource.cache
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.CoreCompileInputs.cache
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.exe
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.pdb

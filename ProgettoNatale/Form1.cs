@@ -23,7 +23,8 @@ namespace ProgettoNatale
 
         private void button1_Click(object sender, EventArgs e)
         {
-            connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
+            //connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
+            connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True");
             try
             {
                 connectionTabelle.Open();
@@ -91,7 +92,8 @@ namespace ProgettoNatale
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
+            //connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
+            connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True");
             try
             {
                 connectionDatabase.Open();
