@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace ProgettoNatale
 {
@@ -25,16 +27,21 @@ namespace ProgettoNatale
 
         private void View_Kids_Click(object sender, EventArgs e) //Inserimento dati dei bambini quando si clicca
         {
+            List<Bambino> Bambini_Sfruttati = new List<Bambino>();
             Random rand = new Random(DateTime.Now.Second);
             RandomName nameGen = new RandomName(rand);
             List<string> Names = nameGen.RandomNames(2000, 0);
             Random rnd = new Random();
             foreach (string name in Names)
             {
-                int eta = rnd.Next(0, 9);
-                int bonta = rnd.Next(0, 100);
-                
+                string[] arrGay = name.Split(' ');
+                int eta = rnd.Next(1, 9);
+                int bonta = rnd.Next(0, 101);
+                //Aggiungere la nazione
+                Bambini_Sfruttati.Add(new Bambino { Nome = arrGay[0], Cognome = arrGay[1], Eta = eta, Bonta = bonta});
             }
+
+            File.WriteAllText("ListaBambini.json", JsonConvert.SerializeObject(Bambini_Sfruttati));
         }
 
         private void View_Gifts_Click(object sender, EventArgs e)//Inserimento dati dei regali quando si clicca
@@ -58,5 +65,14 @@ namespace ProgettoNatale
         {
 
         }
+    }
+
+    public class Bambino
+    {
+        public string Nome;
+        public string Cognome;
+        public int Eta;
+        public string Nazione;
+        public int Bonta;
     }
 }
