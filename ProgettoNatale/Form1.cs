@@ -14,10 +14,10 @@ namespace ProgettoNatale
 {
     public partial class Form1 : Form
     {
-        SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
-        //SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
-        SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
-        //SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
+        //SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
+        SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
+        //SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
+        SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
         public Form1()
         {
             InitializeComponent();
@@ -35,6 +35,10 @@ namespace ProgettoNatale
                 Nations_Table(connectionTabelle);
                 Kids_Table(connectionTabelle);
                 MessageBox.Show("Connessione eseguita correttamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+
+                Azioni azioni = new Azioni(connectionTabelle);
+                azioni.Show();              
             }
             catch (SqlException error)
             {
@@ -88,8 +92,6 @@ namespace ProgettoNatale
             }
             else
                 reader.Close();
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)

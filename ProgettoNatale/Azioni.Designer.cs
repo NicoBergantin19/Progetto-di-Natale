@@ -33,6 +33,7 @@ namespace ProgettoNatale
             this.label1 = new System.Windows.Forms.Label();
             this.Search = new System.Windows.Forms.Button();
             this.View_Gifts = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // View_Kids
@@ -42,7 +43,7 @@ namespace ProgettoNatale
             this.View_Kids.Name = "View_Kids";
             this.View_Kids.Size = new System.Drawing.Size(260, 115);
             this.View_Kids.TabIndex = 0;
-            this.View_Kids.Text = "VISUALIZZA BAMBINI";
+            this.View_Kids.Text = "BAMBINI";
             this.View_Kids.UseVisualStyleBackColor = true;
             this.View_Kids.Click += new System.EventHandler(this.View_Kids_Click);
             // 
@@ -54,7 +55,7 @@ namespace ProgettoNatale
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(18, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(770, 39);
+            this.label1.Size = new System.Drawing.Size(737, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "QUESTE SONO LE TUE AZIONI DISPONIBILI";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -68,6 +69,7 @@ namespace ProgettoNatale
             this.Search.TabIndex = 2;
             this.Search.Text = "RICERCA";
             this.Search.UseVisualStyleBackColor = true;
+            this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
             // View_Gifts
             // 
@@ -77,8 +79,20 @@ namespace ProgettoNatale
             this.View_Gifts.Name = "View_Gifts";
             this.View_Gifts.Size = new System.Drawing.Size(260, 115);
             this.View_Gifts.TabIndex = 3;
-            this.View_Gifts.Text = "VISUALIZZA REGALI";
+            this.View_Gifts.Text = "REGALI";
             this.View_Gifts.UseVisualStyleBackColor = true;
+            this.View_Gifts.Click += new System.EventHandler(this.View_Gifts_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(526, 323);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(260, 115);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "MAPPA";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Azioni
             // 
@@ -87,6 +101,7 @@ namespace ProgettoNatale
             this.BackgroundImage = global::ProgettoNatale.Properties.Resources.Sfondo_Azioni;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.View_Gifts);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.label1);
@@ -104,5 +119,6 @@ namespace ProgettoNatale
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.Button View_Gifts;
+        private System.Windows.Forms.Button button1;
     }
 }
