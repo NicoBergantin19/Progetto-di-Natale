@@ -15,11 +15,13 @@ namespace ProgettoNatale
 {
     public partial class Azioni : Form
     {
-        public Azioni(SqlConnection connection)
+        SqlConnection connection;
+        public Azioni(SqlConnection conn)
         {
             InitializeComponent();
+            connection = conn;
         }
-
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -27,27 +29,40 @@ namespace ProgettoNatale
 
         private void View_Kids_Click(object sender, EventArgs e) //Inserimento dati dei bambini quando si clicca
         {
-            List<Bambino> Bambini_Sfruttati = new List<Bambino>();
-            Random rand = new Random(DateTime.Now.Second);
-            RandomName nameGen = new RandomName(rand);
-            List<string> Names = nameGen.RandomNames(2000, 0);
-            Random rnd = new Random();
-            foreach (string name in Names)
+            string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Bambini';";
+            SqlCommand controllo = new SqlCommand(query, connection);
+            SqlDataReader reader = controllo.ExecuteReader();
+            if (reader.HasRows == false)    //Controllo se la tabella esiste già, se esiste non inserisce i nomi
             {
-                string[] arrGay = name.Split(' ');
-                int eta = rnd.Next(1, 9);
-                int bonta = rnd.Next(0, 101);
-                //Aggiungere la nazione
-                Bambini_Sfruttati.Add(new Bambino { Nome = arrGay[0], Cognome = arrGay[1], Eta = eta, Bonta = bonta});
-            }
+                reader.Close();
+                controllo.Cancel();
+                List<Bambino> Bambini_Sfruttati = new List<Bambino>();
+                Random rand = new Random(DateTime.Now.Second);
+                RandomName nameGen = new RandomName(rand);
+                List<string> Names = nameGen.RandomNames(2000, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
+                Random rnd = new Random();
+                foreach (string name in Names)  
+                {
+                    string[] arrGay = name.Split(' ');  //Divide i nomi dai cognomi 
+                    int eta = rnd.Next(1, 9);
+                    int bonta = rnd.Next(0, 101);
+                    //Aggiungere la nazione
+                    Bambini_Sfruttati.Add(new Bambino { Nome = arrGay[0], Cognome = arrGay[1], Eta = eta, Bonta = bonta }); 
+                }
 
-            File.WriteAllText("ListaBambini.json", JsonConvert.SerializeObject(Bambini_Sfruttati));
+                File.WriteAllText("ListaBambini.json", JsonConvert.SerializeObject(Bambini_Sfruttati));
+            }        
+            else
+                reader.Close();
+
+            Bambini bambini = new Bambini(connection);
+            bambini.Show();
+            this.Hide();
         }
 
         private void View_Gifts_Click(object sender, EventArgs e)//Inserimento dati dei regali quando si clicca
-        {
+        {            
             
-
         }
 
         private void Search_Click(object sender, EventArgs e)   //Ricerca tra tabelle 

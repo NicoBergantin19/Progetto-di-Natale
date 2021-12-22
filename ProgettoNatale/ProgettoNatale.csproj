@@ -70,6 +70,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomName.cs" />
+    <Compile Include="Regali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regali.Designer.cs">
+      <DependentUpon>Regali.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Azioni.resx">
       <DependentUpon>Azioni.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +95,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Regali.resx">
+      <DependentUpon>Regali.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -108,6 +117,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="immagini\animated-santa-claus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="immagini\christmas.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

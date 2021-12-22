@@ -36,3 +36,6 @@ D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\bin
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Azioni.resources
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Bambini.resources
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.CopyComplete
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\bin\Debug\Newtonsoft.Json.dll
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\bin\Debug\Newtonsoft.Json.xml
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.CopyComplete

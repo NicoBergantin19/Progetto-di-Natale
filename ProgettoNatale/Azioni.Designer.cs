@@ -39,7 +39,7 @@ namespace ProgettoNatale
             // View_Kids
             // 
             this.View_Kids.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.View_Kids.Location = new System.Drawing.Point(25, 128);
+            this.View_Kids.Location = new System.Drawing.Point(42, 126);
             this.View_Kids.Name = "View_Kids";
             this.View_Kids.Size = new System.Drawing.Size(260, 115);
             this.View_Kids.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace ProgettoNatale
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(18, 9);
+            this.label1.Location = new System.Drawing.Point(35, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(737, 38);
             this.label1.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace ProgettoNatale
             // Search
             // 
             this.Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search.Location = new System.Drawing.Point(526, 128);
+            this.Search.Location = new System.Drawing.Point(495, 126);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(260, 115);
             this.Search.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace ProgettoNatale
             // 
             this.View_Gifts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.View_Gifts.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.View_Gifts.Location = new System.Drawing.Point(25, 323);
+            this.View_Gifts.Location = new System.Drawing.Point(42, 321);
             this.View_Gifts.Name = "View_Gifts";
             this.View_Gifts.Size = new System.Drawing.Size(260, 115);
             this.View_Gifts.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace ProgettoNatale
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(526, 323);
+            this.button1.Location = new System.Drawing.Point(495, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(260, 115);
             this.button1.TabIndex = 4;
@@ -100,12 +100,14 @@ namespace ProgettoNatale
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProgettoNatale.Properties.Resources.Sfondo_Azioni;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(802, 453);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.View_Gifts);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.View_Kids);
+            this.MaximumSize = new System.Drawing.Size(820, 500);
+            this.MinimumSize = new System.Drawing.Size(820, 500);
             this.Name = "Azioni";
             this.Text = "Azioni";
             this.ResumeLayout(false);

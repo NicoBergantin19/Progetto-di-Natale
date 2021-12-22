@@ -14,10 +14,10 @@ namespace ProgettoNatale
 {
     public partial class Form1 : Form
     {
-        SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
-        //SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
-        SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
-        //SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
+        //SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
+        SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
+        //SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
+        SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
         public Form1()
         {
             InitializeComponent();
@@ -79,8 +79,8 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_nazioni = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,Età int, Nazione varchar(30), Bonta int PRIMARY KEY(ID_Bambino));";
-                SqlCommand cmd = new SqlCommand(tab_nazioni, connection);
+                string tab_bambini = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,Età int, Nazione varchar(30), Bonta int PRIMARY KEY(ID_Bambino));";
+                SqlCommand cmd = new SqlCommand(tab_bambini, connection);
                 try
                 {
                     cmd.ExecuteNonQuery();
@@ -94,8 +94,36 @@ namespace ProgettoNatale
                 reader.Close();
         }
 
+        internal void Account_Table(SqlConnection connection)
+        {
+            string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Bambini';";
+            SqlCommand controllo = new SqlCommand(query, connection);
+            SqlDataReader reader = controllo.ExecuteReader();
+            if (reader.HasRows == false)
+            {
+                reader.Close();
+                controllo.Cancel();
+                string tab_account = "CREATE TABLE Account(ID_Account int IDENTITY(1,1), Username varchar(255) NOT NULL,PasswordHash varchar(255) NOT NULL, PRIMARY KEY(ID_Account);";
+                SqlCommand cmd = new SqlCommand(tab_account, connection);
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (SqlException error)
+                {
+                    MessageBox.Show("Errore nel generare la tabella dei Bambini: " + error.ToString());
+                }
+            }
+            else
+                reader.Close();
+        }
+        /// <summary>
+        /// Quando il form "Accedi" si apre viene creato il database 
+        /// in automatico 
+        /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {           
+            //Connessione al database master
             try
             {
                 connectionDatabase.Open();
@@ -104,6 +132,7 @@ namespace ProgettoNatale
             {
                 MessageBox.Show(error.ToString());
             }
+            //Viene controllato se il database Natale esiste e se non esiste lo crea
             string query = "IF NOT EXISTS(SELECT * FROM sys.databases where name = 'Natale') CREATE DATABASE Natale";
             SqlCommand cmd = new SqlCommand(query, connectionDatabase);
             try
