@@ -39,3 +39,5 @@ D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj
 C:\Informatica\Progetto-di-Natale\ProgettoNatale\bin\Debug\Newtonsoft.Json.dll
 C:\Informatica\Progetto-di-Natale\ProgettoNatale\bin\Debug\Newtonsoft.Json.xml
 C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.csproj.CopyComplete
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Regali.resources
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Creazione_Account.resources

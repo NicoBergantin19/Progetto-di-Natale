@@ -83,6 +83,16 @@ namespace ProgettoNatale.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap elfoAccount {
+            get {
+                object obj = ResourceManager.GetObject("elfoAccount", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sfondo_Azioni {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Azioni", resourceCulture);
