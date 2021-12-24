@@ -90,8 +90,6 @@ namespace ProgettoNatale
         {
             string passCrip = Crittografia(textBox2.Text);
             // Prende tutti i dati dalla tabella e controlla se i dati inseriti nel form di accesso corrispondono a quelli del database
-
-            ////////ERRORE QUA///////////
             SqlDataAdapter sda = new SqlDataAdapter($"SELECT COUNT(*) FROM Account WHERE Username = '{textBox1.Text}' AND Password = '{passCrip}'", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
             sda.Fill(dt);
@@ -173,7 +171,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_account = "CREATE TABLE Account(ID_Account int IDENTITY(1,1), Username text NOT NULL,Password text NOT NULL, Tipo_Account varchar(20) PRIMARY KEY(ID_Account));";
+                string tab_account = "CREATE TABLE Account(ID_Account int IDENTITY(1,1), Username varchar(MAX) NOT NULL,Password varchar(MAX) NOT NULL, Tipo_Account varchar(20) PRIMARY KEY(ID_Account));";
                 SqlCommand cmd = new SqlCommand(tab_account, connectionTabelle);
                 try
                 {

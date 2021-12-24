@@ -109,7 +109,7 @@ namespace ProgettoNatale
             this.MaximumSize = new System.Drawing.Size(820, 500);
             this.MinimumSize = new System.Drawing.Size(820, 500);
             this.Name = "Azioni";
-            this.Text = "Azioni";
+            this.Text = "Azioni_Babbo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

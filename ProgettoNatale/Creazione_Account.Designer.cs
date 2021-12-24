@@ -129,6 +129,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::ProgettoNatale.Properties.Resources.animated_santa_claus;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(669, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
