@@ -74,7 +74,7 @@ namespace ProgettoNatale
             }
         }
 
-        internal static string Crittografia(string text)
+        internal static string Crittografia(string text)    //Va a crittografare una stringa 
         {
             var crypt = new SHA256Managed();
             var hash = new StringBuilder();
@@ -86,7 +86,7 @@ namespace ProgettoNatale
             return hash.ToString();
         }
 
-        internal void Check_Account(SqlConnection connection) //DA AGGIUNGERE IL CONTROLLO DELL'HASH 
+        internal void Check_Account(SqlConnection connection) 
         {
             string passCrip = Crittografia(textBox2.Text);
             // Prende tutti i dati dalla tabella e controlla se i dati inseriti nel form di accesso corrispondono a quelli del database

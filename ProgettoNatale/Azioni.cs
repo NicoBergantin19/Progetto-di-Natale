@@ -60,6 +60,11 @@ namespace ProgettoNatale
             this.Hide();
         }
 
+        internal void Insert_Kids(SqlConnection connection)
+        {
+            string query = "INSERT INTO Bambini ";
+        }
+
         private void View_Gifts_Click(object sender, EventArgs e)//Inserimento dati dei regali quando si clicca
         {            
             
