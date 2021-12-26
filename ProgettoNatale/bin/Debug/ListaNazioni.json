@@ -235,7 +235,7 @@
     "Fuso_Orario": "UTC+9"
   },
   {
-    "Nome": "Costa d'Avorio",
+    "Nome": "Costa d''Avorio",
     "Continente": "Africa",
     "Fuso_Orario": "UTC+0"
   },
@@ -545,7 +545,7 @@
     "Fuso_Orario": "UTC+11"
   },
   {
-    "Nome": "Isole Sparse dell'oceano Indino",
+    "Nome": "Isole Sparse dell''oceano Indino",
     "Continente": "Africa",
     "Fuso_Orario": "UTC+4"
   },
@@ -965,7 +965,7 @@
     "Fuso_Orario": "UTC-4"
   },
   {
-    "Nome": "Sant'Elena, scensione e Tristan da Cunha",
+    "Nome": "Sant''Elena, scensione e Tristan da Cunha",
     "Continente": "Europa",
     "Fuso_Orario": "UTC+0"
   },
@@ -1040,7 +1040,7 @@
     "Fuso_Orario": "UTC+10"
   },
   {
-    "Nome": "Stati Uniti d'America",
+    "Nome": "Stati Uniti d''America",
     "Continente": "America",
     "Fuso_Orario": "UTC-9"
   },

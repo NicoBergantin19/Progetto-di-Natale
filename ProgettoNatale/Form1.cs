@@ -15,10 +15,8 @@ namespace ProgettoNatale
 {
     public partial class Form1 : Form
     {
-        //SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
-        SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
-        //SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
-        SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
+        SqlConnection connectionDatabase = new SqlConnection("Data Source=.;Integrated Security=True");
+        SqlConnection connectionTabelle = new SqlConnection("Data Source=.;Initial Catalog=Natale;Integrated Security=True");
         public Form1()
         {
             InitializeComponent();
@@ -116,7 +114,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_nazioni = "CREATE TABLE Nazioni(ID_Nazione int IDENTITY(1,1), Nome varchar(30) NOT NULL, Continente varchar(30) NOT NULL, Fuso_Orario datetime NOT NULL, PRIMARY KEY(ID_Nazione));"; //query creazione tabella
+                string tab_nazioni = "CREATE TABLE Nazioni(ID_Nazione int IDENTITY(1,1), Nome varchar(MAX) NOT NULL, Continente varchar(30) NOT NULL, Fuso_Orario varchar(30) NOT NULL, PRIMARY KEY(ID_Nazione));"; //query creazione tabella
                 SqlCommand cmd = new SqlCommand(tab_nazioni, connection);
                 try
                 {

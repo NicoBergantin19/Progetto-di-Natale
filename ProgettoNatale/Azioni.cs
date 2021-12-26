@@ -35,6 +35,7 @@ namespace ProgettoNatale
             //Controllo se la tabella esiste già, se esiste non inserisce i nomi
             if (dt.Rows[0][0].ToString() == "0")
             {
+                Aggiungi_Nazioni(connection);
                 List<Bambino> Bambini_Sfruttati = new List<Bambino>();
                 Random rand = new Random(DateTime.Now.Second);
                 RandomName nameGen = new RandomName(rand);
@@ -57,7 +58,7 @@ namespace ProgettoNatale
                     {
                         MessageBox.Show("Inserimento dei bambini non andato a buon fine: " + error.Message);
                     }
-                }
+                }               
             }
 
             Bambini bambini = new Bambini(connection);
@@ -85,6 +86,17 @@ namespace ProgettoNatale
         {
 
         }
+
+        internal void Aggiungi_Nazioni(SqlConnection connection)
+        {
+            List<Nazioni> Dc = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
+            foreach (Nazioni dp in Dc)
+            {
+                string query = $"INSERT INTO Nazioni (Nome, Continente, Fuso_Orario) VALUES ('{dp.Nome}', '{dp.Continente}', '{dp.Fuso_Orario}')";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 
     public class Bambino
@@ -94,5 +106,12 @@ namespace ProgettoNatale
         public int Eta;
         public string Nazione;
         public int Bonta;
+    }
+
+    public class Nazioni
+    {
+        public string Nome;
+        public string Continente;
+        public string Fuso_Orario;
     }
 }
