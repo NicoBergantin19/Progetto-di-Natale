@@ -27,22 +27,6 @@ namespace ProgettoNatale
 
         }
 
-        internal void Insert_Kids(SqlConnection connection)
-        {
-            /*string jfile = Environment.CurrentDirectory + @"\ListaBambini.json";
-            string query = $"SELECT * FROM OPENROWSET (BULK '{jfile}', SINGLE_CLOB) as import;";
-            SqlCommand cmd = new SqlCommand(query, connection);
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("I bambini sono stati inseriti\n\tOra puoi vedere la lista");
-            }
-            catch (SqlException error)
-            {
-                MessageBox.Show(error.Message);
-            }*/
-        }
-
         private void View_Kids_Click(object sender, EventArgs e) //Inserimento dati dei bambini quando si clicca
         {
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Bambini", connection);
@@ -81,7 +65,7 @@ namespace ProgettoNatale
             this.Hide();
         }
 
-        private void View_Gifts_Click(object sender, EventArgs e)//Inserimento dati dei regali quando si clicca
+        private void View_Gifts_Click(object sender, EventArgs e) //Inserimento dati dei regali quando si clicca
         {
 
         }

@@ -43,7 +43,11 @@ namespace ProgettoNatale
                 tipoAccount = "Amministratore";
             else if (radioElfo.Checked)
                 tipoAccount = "Lavoratore";
-
+            if (!radioBabbo.Checked && !radioElfo.Checked)
+            {
+                MessageBox.Show("Non è stato inserito il tipo di account");
+                return;
+            }
             string passCritt = Crittografia(textBox2.Text);
             string query = $"INSERT INTO Account (Username, Password, Tipo_Account) VALUES ('{textBox1.Text}', '{passCritt}', '{tipoAccount}')";
             SqlCommand cmd = new SqlCommand(query, connection);

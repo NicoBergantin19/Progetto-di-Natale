@@ -164,7 +164,6 @@ namespace ProgettoNatale
             catch (SqlException error)
             {
                 MessageBox.Show("Errore nell'istanziare la connessione per la tabella degli account: " + error.ToString());
-                throw;
             }
             
             string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Account';";

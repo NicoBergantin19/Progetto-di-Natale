@@ -1,0 +1,1207 @@
+[
+  {
+    "Nome": "Afghanistan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Albania",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Algeria",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Andorra",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Angola",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Anguilla",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Antigua e Barbuda",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Arabia Saudita",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Argentina",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Armenia",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Aruba",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Australia",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+9"
+  },
+  {
+    "Nome": "Austria",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Azerbaigian",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Bahamas",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Bahrain",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Bangladesh",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+6"
+  },
+  {
+    "Nome": "Barbados",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Belgio",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Belize",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-6"
+  },
+  {
+    "Nome": "Benin",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Bermuda",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Bhutan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+6"
+  },
+  {
+    "Nome": "Bielorussia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Birmania",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+6"
+  },
+  {
+    "Nome": "Bolivia",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Bosnia ed Erzegovina",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Botswana",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Brasile",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Brunei",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Bulgaria",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Burkina Faso",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Burundi",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Cambogia",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+7"
+  },
+  {
+    "Nome": "Camerun",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Canada",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Capo Verde",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC-1"
+  },
+  {
+    "Nome": "Ceuta",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Ciad",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Cile",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Cina",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Cipro",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Città del Vaticano",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Colombia",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Comore",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Corea del Nord",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Corea del Sud",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+9"
+  },
+  {
+    "Nome": "Costa d'Avorio",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Costa Rica",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-6"
+  },
+  {
+    "Nome": "Croazia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Cuba",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Curaçao",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Danimarca",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Dominica",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Ecuador",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Egitto",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "El Salvador",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-6"
+  },
+  {
+    "Nome": "Emirati Arabi Uniti",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Eritrea",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "eSwatini",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Estonia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Etiopia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Fær Øer",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Figi",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+12"
+  },
+  {
+    "Nome": "Filippine",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Finlandia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Francia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Gabon",
+    "Continente": "AfrIca",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Gambia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Georgia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Georgia del Sud e Isole Sandwich Australi",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-2"
+  },
+  {
+    "Nome": "Germania",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Ghana",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Giamaica",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Giappone",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+9"
+  },
+  {
+    "Nome": "Gibilterra",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Gibuiti",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Giordania",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Grecia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Grenada",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Groelandia",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Guadalupa",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Guam",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+10"
+  },
+  {
+    "Nome": "Guatemala",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-6"
+  },
+  {
+    "Nome": "Guinea",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Guinea Equatoriale",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Guinea-Bissau",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Guyana",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Guyana francese",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Haiti",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Honduras",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-6"
+  },
+  {
+    "Nome": "Hong Kong",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "India",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Indonesia",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Iran",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Iraq",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Irlanda",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Islanda",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Isole Canarie",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Isole Cayman",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Isole Cocos e Keeling",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+6"
+  },
+  {
+    "Nome": "Isole Cook",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC-11"
+  },
+  {
+    "Nome": "Isola di Natale",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+7"
+  },
+  {
+    "Nome": "Isole Falkland",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Isole Marianne Settentrionali",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+10"
+  },
+  {
+    "Nome": "Isole Marshall",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+12"
+  },
+  {
+    "Nome": "Isola Norfolk",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+11"
+  },
+  {
+    "Nome": "Isole Pitcairn",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC-8"
+  },
+  {
+    "Nome": "Isole Salomone",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+11"
+  },
+  {
+    "Nome": "Isole Sparse dell'oceano Indino",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Isole Vergini americane",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Isole Vergini britanniche",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Israele",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Italia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Kazakistan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Kenya",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Kirghizistan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Kiribati",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+13"
+  },
+  {
+    "Nome": "Kuwait",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Laos",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+7"
+  },
+  {
+    "Nome": "Lesotho",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Lettonia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Libano",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Liberia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Libia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Liechtenstein",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Lituania",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Lussemburgo",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Macao",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Macedonia del Nord",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Madagascar",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Madera",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Malawi",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Maldive",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Malesia",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Mali",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Malta",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Marocco",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Martinica",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Mauritania",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Muritius",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Mayotte",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Melilla",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Messico",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-7"
+  },
+  {
+    "Nome": "Moldavia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Mongolia",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Montenegro",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Montserrat",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Mozambico",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Namibia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Nauru",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+12"
+  },
+  {
+    "Nome": "Nepal",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Nicaragua",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-6"
+  },
+  {
+    "Nome": "Niger",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Nigeria",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Niue",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC-11"
+  },
+  {
+    "Nome": "Norvegia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Nuova Caledonia",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+11"
+  },
+  {
+    "Nome": "Nuova Zelanda",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+12"
+  },
+  {
+    "Nome": "Oman",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Paesi Bassi",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Pakistan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Palau",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+9"
+  },
+  {
+    "Nome": "Stato di Palestina",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Panama",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Papua Nuova Guinea",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+10"
+  },
+  {
+    "Nome": "Paraguay",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Perù",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Polinesia Francese",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC-11"
+  },
+  {
+    "Nome": "Polonia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Porto Rico",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Portogallo",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Principato di Monaco",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Qatar",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Regno Unito",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Repubblica Ceca",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Repubblica Centrafricana",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Repubblica del Congo",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Repubblica Democratica del Congo",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Repubblica Domenicana",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Riunione",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Romania",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Ruanda",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Russia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Saint Kitts e Nevis",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Saint Vincent e Grenadine",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Saint-Barthélemy",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Saint-Martin",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Saint-Pierre e Miquelon",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Samoa",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC-11"
+  },
+  {
+    "Nome": "Samoa Americane",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC-11"
+  },
+  {
+    "Nome": "San Marino",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Saint Lucia",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Sant'Elena, scensione e Tristan da Cunha",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "São Tomé e Príncipe",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Senegal",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Serbia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Seychelles",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+4"
+  },
+  {
+    "Nome": "Sierra Leone",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Singapore",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Sint Maarten",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Siria",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Slovacchia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Slovenia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Somalia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Spagna",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Sri Lanka",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Stati Federati di Micronesia",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+10"
+  },
+  {
+    "Nome": "Stati Uniti d'America",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-9"
+  },
+  {
+    "Nome": "Sudafrica",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Sudan",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Sudan del Sud",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Suriname",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Svezia",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Svizzera",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Tagikistan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Taiwan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Tanzania",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Thailandia",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+7"
+  },
+  {
+    "Nome": "Timor Est",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+8"
+  },
+  {
+    "Nome": "Togo",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+0"
+  },
+  {
+    "Nome": "Tokelau",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC-10"
+  },
+  {
+    "Nome": "Tonga",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+12"
+  },
+  {
+    "Nome": "Trinidad e Tobago",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Tunisia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Turchia",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Turkmenistan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Turks e Caicos",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-5"
+  },
+  {
+    "Nome": "Tuvalu",
+    "Continente": "Ocenia",
+    "Fuso_Orario": "UTC+12"
+  },
+  {
+    "Nome": "Ucraina",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Uganda",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Ungheria",
+    "Continente": "Europa",
+    "Fuso_Orario": "UTC+1"
+  },
+  {
+    "Nome": "Uruguay",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-3"
+  },
+  {
+    "Nome": "Uzbekistan",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+5"
+  },
+  {
+    "Nome": "Vanuatu",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+11"
+  },
+  {
+    "Nome": "Venezuela",
+    "Continente": "America",
+    "Fuso_Orario": "UTC-4"
+  },
+  {
+    "Nome": "Vietnam",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+7"
+  },
+  {
+    "Nome": "Wallis e Futuna",
+    "Continente": "Oceania",
+    "Fuso_Orario": "UTC+12"
+  },
+  {
+    "Nome": "Yemen",
+    "Continente": "Asia",
+    "Fuso_Orario": "UTC+3"
+  },
+  {
+    "Nome": "Zambia",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  },
+  {
+    "Nome": "Zimbabwe",
+    "Continente": "Africa",
+    "Fuso_Orario": "UTC+2"
+  }
+]
