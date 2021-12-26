@@ -15,10 +15,10 @@ namespace ProgettoNatale
 {
     public partial class Form1 : Form
     {
-        SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
-        //SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
-        SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
-        //SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
+        //SqlConnection connectionDatabase = new SqlConnection("Data Source=DESKTOP-0JNBS50;Integrated Security=True");
+        SqlConnection connectionDatabase = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Integrated Security=True"); //Portatile
+        //SqlConnection connectionTabelle = new SqlConnection("Data Source=DESKTOP-0JNBS50;Initial Catalog=Natale;Integrated Security=True");
+        SqlConnection connectionTabelle = new SqlConnection("Data Source=LAPTOP-MJHOTP6E;Initial Catalog=Natale;Integrated Security=True"); //Portatile
         public Form1()
         {
             InitializeComponent();
@@ -57,20 +57,18 @@ namespace ProgettoNatale
             {
                 dr.Close();
                 cmd.Cancel();
-            }
 
-            //Operazioni principali dell'accesso 
-            try    
-            {
-                Check_Account(connectionTabelle);
-                Nations_Table(connectionTabelle);
-                Kids_Table(connectionTabelle);
-                MessageBox.Show("Connessione eseguita correttamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();         
-            }
-            catch (SqlException error)
-            {
-                MessageBox.Show(error.ToString());
+                //Operazioni principali dell'accesso 
+                try
+                {
+                    Check_Account(connectionTabelle);
+                    Nations_Table(connectionTabelle);
+                    Kids_Table(connectionTabelle);
+                }
+                catch (SqlException error)
+                {
+                    MessageBox.Show(error.ToString());
+                }
             }
         }
 
@@ -100,7 +98,12 @@ namespace ProgettoNatale
                 this.Hide();
             }
             else
-                MessageBox.Show("Username o password non valido");       
+            {
+                MessageBox.Show("Username o password non valido");
+                
+                return;
+            }
+            
         }  
 
         internal void Nations_Table(SqlConnection connection)   //Creazione della tabella "Nazioni" 
@@ -137,7 +140,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_bambini = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,Età int NOT NULL, Nazione varchar(30) NOT NULL, Bonta int NOT NULL, PRIMARY KEY(ID_Bambino));";
+                string tab_bambini = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,AGE int NOT NULL, Nazione varchar(30), Bonta int NOT NULL, PRIMARY KEY(ID_Bambino));";
                 SqlCommand cmd = new SqlCommand(tab_bambini, connection);
                 try
                 {

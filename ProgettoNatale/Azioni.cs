@@ -21,7 +21,7 @@ namespace ProgettoNatale
             InitializeComponent();
             connection = conn;
         }
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -29,39 +29,52 @@ namespace ProgettoNatale
 
         internal void Insert_Kids(SqlConnection connection)
         {
-            string jfile = Environment.CurrentDirectory + @"\ListaBambini.json";
-            string query = $"SELECT * FROM OPENROWSET (BULK '{jfile}', SINGLE_CLOB) as correlation_name;";
-
-
+            /*string jfile = Environment.CurrentDirectory + @"\ListaBambini.json";
+            string query = $"SELECT * FROM OPENROWSET (BULK '{jfile}', SINGLE_CLOB) as import;";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("I bambini sono stati inseriti\n\tOra puoi vedere la lista");
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.Message);
+            }*/
         }
 
         private void View_Kids_Click(object sender, EventArgs e) //Inserimento dati dei bambini quando si clicca
         {
-            string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Bambini';";
-            SqlCommand controllo = new SqlCommand(query, connection);
-            SqlDataReader reader = controllo.ExecuteReader();
-            if (reader.HasRows == false)    //Controllo se la tabella esiste già, se esiste non inserisce i nomi
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Bambini", connection);
+            DataTable dt = new DataTable(); //Crea una tabella virtuale
+            sda.Fill(dt);
+            //Controllo se la tabella esiste già, se esiste non inserisce i nomi
+            if (dt.Rows[0][0].ToString() == "0")
             {
-                reader.Close();
-                controllo.Cancel();
                 List<Bambino> Bambini_Sfruttati = new List<Bambino>();
                 Random rand = new Random(DateTime.Now.Second);
                 RandomName nameGen = new RandomName(rand);
-                List<string> Names = nameGen.RandomNames(2000, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
+                List<string> Names = nameGen.RandomNames(2500, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
                 Random rnd = new Random();
-                foreach (string name in Names)  
+                foreach (string name in Names)
                 {
                     string[] arrGay = name.Split(' ');  //Divide i nomi dai cognomi 
                     int eta = rnd.Next(1, 9);
                     int bonta = rnd.Next(0, 101);
                     //Aggiungere la nazione
-                    Bambini_Sfruttati.Add(new Bambino { Nome = arrGay[0], Cognome = arrGay[1], Eta = eta, Bonta = bonta }); 
+                    //Bambini_Sfruttati.Add(new Bambino { Nome = arrGay[0], Cognome = arrGay[1], Eta = eta, Bonta = bonta });
+                    string query = $"INSERT INTO Bambini (Nome, Cognome, AGE, Bonta) VALUES ('{arrGay[0]}', '{arrGay[1]}', {eta}, {bonta});";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    catch (SqlException error)
+                    {
+                        MessageBox.Show("Inserimento dei bambini non andato a buon fine: " + error.Message);
+                    }
                 }
-
-                File.WriteAllText("ListaBambini.json", JsonConvert.SerializeObject(Bambini_Sfruttati));
-            }        
-            else
-                reader.Close();
+            }
 
             Bambini bambini = new Bambini(connection);
             bambini.Show();
@@ -69,8 +82,8 @@ namespace ProgettoNatale
         }
 
         private void View_Gifts_Click(object sender, EventArgs e)//Inserimento dati dei regali quando si clicca
-        {            
-            
+        {
+
         }
 
         private void Search_Click(object sender, EventArgs e)   //Ricerca tra tabelle 
