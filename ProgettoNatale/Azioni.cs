@@ -27,6 +27,14 @@ namespace ProgettoNatale
 
         }
 
+        internal void Insert_Kids(SqlConnection connection)
+        {
+            string jfile = Environment.CurrentDirectory + @"\ListaBambini.json";
+            string query = $"SELECT * FROM OPENROWSET (BULK '{jfile}', SINGLE_CLOB) as correlation_name;";
+
+
+        }
+
         private void View_Kids_Click(object sender, EventArgs e) //Inserimento dati dei bambini quando si clicca
         {
             string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Bambini';";
@@ -58,11 +66,6 @@ namespace ProgettoNatale
             Bambini bambini = new Bambini(connection);
             bambini.Show();
             this.Hide();
-        }
-
-        internal void Insert_Kids(SqlConnection connection)
-        {
-            string query = "INSERT INTO Bambini ";
         }
 
         private void View_Gifts_Click(object sender, EventArgs e)//Inserimento dati dei regali quando si clicca

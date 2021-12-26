@@ -31,10 +31,7 @@ namespace ProgettoNatale
 
             dataReader.Close();
         }
-        internal void Inserimento_Bambini()
-        {
 
-        }
         private void Bambini_Load(object sender, EventArgs e)
         {
             Visualizza("SELECT * FROM Bambini");
