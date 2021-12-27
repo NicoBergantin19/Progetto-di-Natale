@@ -39,7 +39,7 @@ namespace ProgettoNatale
                 List<Bambino> Bambini_Sfruttati = new List<Bambino>();
                 Random rand = new Random(DateTime.Now.Second);
                 RandomName nameGen = new RandomName(rand);
-                List<string> Names = nameGen.RandomNames(2500, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
+                List<string> Names = nameGen.RandomNames(10000, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
                 Random rnd = new Random();
                 foreach (string name in Names)
                 {
@@ -80,7 +80,7 @@ namespace ProgettoNatale
         /// La mappa sarà composta da un dato orario e una tabella con i bambini e i regali,
         /// l'orario è collegato ad una certa nazione, sarà presente un bottone che modifica l'orario 
         /// mandandolo avanti di un'ora. Quindi le tabelle vengono aggiornate togliendo i bambini 
-        /// che hanno ricevuto il regalo in quella deterinata nazione..
+        /// che hanno ricevuto il regalo in quella determinata nazione.
         /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {

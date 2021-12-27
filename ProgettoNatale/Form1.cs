@@ -62,6 +62,7 @@ namespace ProgettoNatale
                     Check_Account(connectionTabelle);
                     Nations_Table(connectionTabelle);
                     Kids_Table(connectionTabelle);
+                    Gifts_Table(connectionTabelle);
                 }
                 catch (SqlException error)
                 {
@@ -97,12 +98,36 @@ namespace ProgettoNatale
             }
             else
             {
-                MessageBox.Show("Username o password non valido");
-                
+                MessageBox.Show("Username o password non valido");                
                 return;
             }
             
         }  
+
+        internal void Gifts_Table(SqlConnection connection)
+        {
+            string query = @"SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Regali';"; //query per vedere se esiste una tabella chiamata "Regali"
+                                                                                                     //se il reader restituisce delle righe vuol dire che esiste
+            SqlCommand controllo = new SqlCommand(query, connection);
+            SqlDataReader reader = controllo.ExecuteReader();
+            if (reader.HasRows == false)    //Controllo esistenza tabella
+            {
+                reader.Close();
+                controllo.Cancel();
+                string tab_regali = "CREATE TABLE Reagli(ID_Regalo int IDENTITY(1,1), Tipo varchar(MAX) NOT NULL, Categoria varchar(MAX), Bonta int, PRIMARY KEY(ID_Regalo));"; //query creazione tabella
+                SqlCommand cmd = new SqlCommand(tab_regali, connection);
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                }
+                catch (SqlException error)
+                {
+                    MessageBox.Show("Errore nel generare la tabella nazioni: " + error.ToString());
+                }
+            }
+            else
+                reader.Close();
+        }
 
         internal void Nations_Table(SqlConnection connection)   //Creazione della tabella "Nazioni" 
         {
