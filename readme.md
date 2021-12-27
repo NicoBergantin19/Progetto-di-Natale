@@ -1,1 +1,1 @@
-Appena si accede al codice ricordarsi di cambiare le stringhe di connessione all'inizio del Form1.cs
+
