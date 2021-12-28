@@ -35,12 +35,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 44);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(516, 471);
+            this.dataGridView1.Size = new System.Drawing.Size(614, 471);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -65,6 +66,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Regali";
             this.Text = "Regali";
+            this.Load += new System.EventHandler(this.Regali_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

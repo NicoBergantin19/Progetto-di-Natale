@@ -1,0 +1,1402 @@
+[
+  {
+    "Tipo": "Maglietta fluorescente",
+    "Categoria": "Abbigliamento",
+    "Bonta": "25"
+  },
+  {
+    "Tipo": "Laboratorio di meccanica",
+    "Categoria": "Costruzioni",
+    "Bonta": "23"
+  },
+  {
+    "Tipo": "Puzzle 3D Titanic",
+    "Categoria": "Costruzioni",
+    "Bonta": "48"
+  },
+  {
+    "Tipo": "Macchina Telecomandata",
+    "Categoria": "Macchine",
+    "Bonta": "56"
+  },
+  {
+    "Tipo": "Spikeball",
+    "Categoria": "Sport",
+    "Bonta": "63"
+  },
+  {
+    "Tipo": "Grande libro del corpo umano",
+    "Categoria": "Libri",
+    "Bonta": "18"
+  },
+  {
+    "Tipo": "Mini drone con videocamera",
+    "Categoria": "Sport",
+    "Bonta": "82"
+  },
+  {
+    "Tipo": "Fucile NERF",
+    "Categoria": "Armi giocattolo",
+    "Bonta": "74"
+  },
+  {
+    "Tipo": "Calcio Balilla in legno",
+    "Categoria": "Sport",
+    "Bonta": "81"
+  },
+  {
+    "Tipo": "Bici mountain bike",
+    "Categoria": "Sport",
+    "Bonta": "77"
+  },
+  {
+    "Tipo": "Lego Harry Potter",
+    "Categoria": "Costruzioni",
+    "Bonta": "40"
+  },
+  {
+    "Tipo": "Set giochi di magia",
+    "Categoria": "Magia",
+    "Bonta": "37"
+  },
+  {
+    "Tipo": "Libro di barzellette",
+    "Categoria": "Libri",
+    "Bonta": "14"
+  },
+  {
+    "Tipo": "Costruzioni magnetiche Geomag",
+    "Categoria": "Costruzioni",
+    "Bonta": "60"
+  },
+  {
+    "Tipo": "Cassa bluetooth tascabile",
+    "Categoria": "Musica",
+    "Bonta": "30"
+  },
+  {
+    "Tipo": "Sabbia cinetica",
+    "Categoria": "Costruzioni",
+    "Bonta": "21"
+  },
+  {
+    "Tipo": "Taccuino unicorno",
+    "Categoria": "Libri",
+    "Bonta": "15"
+  },
+  {
+    "Tipo": "Puzzle 3D Sneaker",
+    "Categoria": "Costruzioni",
+    "Bonta": "33"
+  },
+  {
+    "Tipo": "Libro per ragazze coraggiose",
+    "Categoria": "Libri",
+    "Bonta": "24"
+  },
+  {
+    "Tipo": "Cool maker",
+    "Categoria": "Moda",
+    "Bonta": "35"
+  },
+  {
+    "Tipo": "Mappa del mondo da grattare",
+    "Categoria": "Geografia",
+    "Bonta": "20"
+  },
+  {
+    "Tipo": "Cuffie bluetooth",
+    "Categoria": "Musica",
+    "Bonta": "32"
+  },
+  {
+    "Tipo": "Barbie collezione Inspiring Women",
+    "Categoria": "Moda",
+    "Bonta": "50"
+  },
+  {
+    "Tipo": "Pattini",
+    "Categoria": "Sport",
+    "Bonta": "59"
+  },
+  {
+    "Tipo": "Portagioie con carillon",
+    "Categoria": "Mobilio",
+    "Bonta": "22"
+  },
+  {
+    "Tipo": "Funko Pop Stranger Things",
+    "Categoria": "Magia",
+    "Bonta": "31"
+  },
+  {
+    "Tipo": "Echo dot",
+    "Categoria": "Musica",
+    "Bonta": "70"
+  },
+  {
+    "Tipo": "Tavoletta grafica",
+    "Categoria": "Grafica",
+    "Bonta": "85"
+  },
+  {
+    "Tipo": "Salvadanaio cassaforte con password",
+    "Categoria": "Mobilio",
+    "Bonta": "34"
+  },
+  {
+    "Tipo": "Penna 3D con schermo LCD",
+    "Categoria": "Costruzioni",
+    "Bonta": "46"
+  },
+  {
+    "Tipo": "Lente d''ingrandimento per schermo smartphone",
+    "Categoria": "Grafica",
+    "Bonta": "19"
+  },
+  {
+    "Tipo": "Smartwatch con localizzatore GPS",
+    "Categoria": "Orologeria",
+    "Bonta": "61"
+  },
+  {
+    "Tipo": "Tablet Huawei",
+    "Categoria": "Grafica",
+    "Bonta": "94"
+  },
+  {
+    "Tipo": "Lettore e-book",
+    "Categoria": "Libri",
+    "Bonta": "84"
+  },
+  {
+    "Tipo": "LEGO Robot interattivo",
+    "Categoria": "Costruzioni",
+    "Bonta": "76"
+  },
+  {
+    "Tipo": "mini set pittura",
+    "Categoria": "Grafica",
+    "Bonta": "68"
+  },
+  {
+    "Tipo": "Valigetta dei colori",
+    "Categoria": "Grafica",
+    "Bonta": "49"
+  },
+  {
+    "Tipo": "Laboratorio ceramica",
+    "Categoria": "Grafica",
+    "Bonta": "38"
+  },
+  {
+    "Tipo": "Disegni mandala da colorare",
+    "Categoria": "Libri",
+    "Bonta": "26"
+  },
+  {
+    "Tipo": "Microscopio",
+    "Categoria": "Scienza",
+    "Bonta": "47"
+  },
+  {
+    "Tipo": "Gravitax",
+    "Categoria": "Scienza",
+    "Bonta": "41"
+  },
+  {
+    "Tipo": "Enciclopedia dei dinosauri",
+    "Categoria": "Libri",
+    "Bonta": "17"
+  },
+  {
+    "Tipo": "Kit esperto elettronico",
+    "Categoria": "Scienza",
+    "Bonta": "36"
+  },
+  {
+    "Tipo": "libro di Greta Thunberg",
+    "Categoria": "Libri",
+    "Bonta": "11"
+  },
+  {
+    "Tipo": "Taboo Hasbro",
+    "Categoria": "Giochi da tavolo",
+    "Bonta": "27"
+  },
+  {
+    "Tipo": "Meteoropatici Clementoni",
+    "Categoria": "Giochi da tavolo",
+    "Bonta": "29"
+  },
+  {
+    "Tipo": "Minecraft Builders & Biomes",
+    "Categoria": "Giochi da tavolo",
+    "Bonta": "43"
+  },
+  {
+    "Tipo": "Il manuale delle 50 avventure",
+    "Categoria": "Libri",
+    "Bonta": "16"
+  },
+  {
+    "Tipo": "La chiave segreta per l''universo",
+    "Categoria": "Libri",
+    "Bonta": "12"
+  },
+  {
+    "Tipo": "Il libro delle meraviglie perdute",
+    "Categoria": "Libri",
+    "Bonta": "13"
+  },
+  {
+    "Tipo": "Il piccolo principe",
+    "Categoria": "Libri",
+    "Bonta": "12"
+  },
+  {
+    "Tipo": "Libro di Stranger Things",
+    "Categoria": "Libri",
+    "Bonta": "28"
+  },
+  {
+    "Tipo": "Nintendo Switch",
+    "Categoria": "Videogiochi",
+    "Bonta": "92"
+  },
+  {
+    "Tipo": "Mini speaker",
+    "Categoria": "Musica",
+    "Bonta": "36"
+  },
+  {
+    "Tipo": "Xbox Series S",
+    "Categoria": "Videogiochi",
+    "Bonta": "96"
+  },
+  {
+    "Tipo": "Lenovo Tab M10 FHD Plus",
+    "Categoria": "Grafica",
+    "Bonta": "91"
+  },
+  {
+    "Tipo": "Pokemon Diamante Lucente",
+    "Categoria": "Videogiochi",
+    "Bonta": "44"
+  },
+  {
+    "Tipo": "Pokemon Perla Splendente",
+    "Categoria": "Videogiochi",
+    "Bonta": "45"
+  },
+  {
+    "Tipo": "Animal Crossing New Horizons",
+    "Categoria": "Videogiochi",
+    "Bonta": "42"
+  },
+  {
+    "Tipo": "Macchina fotografica istantanea",
+    "Categoria": "Fotografia",
+    "Bonta": "75"
+  },
+  {
+    "Tipo": "Kit crescita cristalli",
+    "Categoria": "Scienza",
+    "Bonta": "39"
+  },
+  {
+    "Tipo": "Drone smartphone-comandato",
+    "Categoria": "Sport",
+    "Bonta": "51"
+  },
+  {
+    "Tipo": "Ghenos pozioni esplosive",
+    "Categoria": "Scienza",
+    "Bonta": "52"
+  },
+  {
+    "Tipo": "Clementoni orto in serra",
+    "Categoria": "Scienza",
+    "Bonta": "53"
+  },
+  {
+    "Tipo": "Mappamondo fisico-politico",
+    "Categoria": "Geografia",
+    "Bonta": "55"
+  },
+  {
+    "Tipo": "Telescopio astronomico",
+    "Categoria": "Scienza",
+    "Bonta": "93"
+  },
+  {
+    "Tipo": "Lisciani la scienza nel buio",
+    "Categoria": "Scienza",
+    "Bonta": "54"
+  },
+  {
+    "Tipo": "Borsellino Unisex",
+    "Categoria": "Moda",
+    "Bonta": "65"
+  },
+  {
+    "Tipo": "Lava lamp",
+    "Categoria": "Mobilio",
+    "Bonta": "64"
+  },
+  {
+    "Tipo": "Xiaomi smart band",
+    "Categoria": "Orologeria",
+    "Bonta": "62"
+  },
+  {
+    "Tipo": "Cuffie Beats con filo",
+    "Categoria": "Musica",
+    "Bonta": "73"
+  },
+  {
+    "Tipo": "Set da bagno in valigetta regalo",
+    "Categoria": "Doccia",
+    "Bonta": "57"
+  },
+  {
+    "Tipo": "Coperta in pile a forma di coda di sirena",
+    "Categoria": "Abbigliamento",
+    "Bonta": "66"
+  },
+  {
+    "Tipo": "Kit tatuaggi glitterati",
+    "Categoria": "Moda",
+    "Bonta": "67"
+  },
+  {
+    "Tipo": "Mini tastiera musicale portatile",
+    "Categoria": "Musica",
+    "Bonta": "83"
+  },
+  {
+    "Tipo": "Puzzle 3D Big Ben",
+    "Categoria": "Costruzioni",
+    "Bonta": "58"
+  },
+  {
+    "Tipo": "Trainer da calcio",
+    "Categoria": "Sport",
+    "Bonta": "71"
+  },
+  {
+    "Tipo": "Pallone da calcio fluttuante",
+    "Categoria": "Sport",
+    "Bonta": "72"
+  },
+  {
+    "Tipo": "Kit allenamento Hockey",
+    "Categoria": "Sport",
+    "Bonta": "78"
+  },
+  {
+    "Tipo": "Microfono bluetooth karaoke",
+    "Categoria": "Musica",
+    "Bonta": "69"
+  },
+  {
+    "Tipo": "Lampada LED calcio",
+    "Categoria": "Mobilio",
+    "Bonta": "79"
+  },
+  {
+    "Tipo": "Ragno telecomandato",
+    "Categoria": "Sport",
+    "Bonta": "86"
+  },
+  {
+    "Tipo": "Walkie Talkie",
+    "Categoria": "Sport",
+    "Bonta": "80"
+  },
+  {
+    "Tipo": "Felpa Fortnite",
+    "Categoria": "Abbigliamento",
+    "Bonta": "87"
+  },
+  {
+    "Tipo": "Scacchiera in vetro",
+    "Categoria": "Sport",
+    "Bonta": "95"
+  },
+  {
+    "Tipo": "Castello gonfiabile",
+    "Categoria": "Sport",
+    "Bonta": "90"
+  },
+  {
+    "Tipo": "Scrivania e sedia da studio",
+    "Categoria": "Mobilio",
+    "Bonta": "97"
+  },
+  {
+    "Tipo": "Modellino auto da collezione",
+    "Categoria": "Sport",
+    "Bonta": "89"
+  },
+  {
+    "Tipo": "Trampolino per bambini",
+    "Categoria": "Sport",
+    "Bonta": "98"
+  },
+  {
+    "Tipo": "Balance Board",
+    "Categoria": "Veicoli",
+    "Bonta": "99"
+  },
+  {
+    "Tipo": "Monopattino elettrico",
+    "Categoria": "Veicoli",
+    "Bonta": "100"
+  },
+  {
+    "Tipo": "Pista per auto da corsa elettrica",
+    "Categoria": "Sport",
+    "Bonta": "88"
+  },
+  {
+    "Tipo": "Recinto per bambini",
+    "Categoria": "Svago",
+    "Bonta": "78"
+  },
+  {
+    "Tipo": "Luce notturna a sensore tattile",
+    "Categoria": "Mobilio",
+    "Bonta": "34"
+  },
+  {
+    "Tipo": "Elicottero telecomandato acrobatico",
+    "Categoria": "Sport",
+    "Bonta": "74"
+  },
+  {
+    "Tipo": "Tastiera elettronica",
+    "Categoria": "Musica",
+    "Bonta": "87"
+  },
+  {
+    "Tipo": "Puzzle 6000 pezzi",
+    "Categoria": "Costruzioni",
+    "Bonta": "65"
+  },
+  {
+    "Tipo": "Puzzle 3000 pezzi",
+    "Categoria": "Costruzioni",
+    "Bonta": "55"
+  },
+  {
+    "Tipo": "Puzzle 1500 pezzi",
+    "Categoria": "Costruzioni",
+    "Bonta": "45"
+  },
+  {
+    "Tipo": "Puzzle 750 pezzi",
+    "Categoria": "Costruzioni",
+    "Bonta": "35"
+  },
+  {
+    "Tipo": "Bersaglio elettrico per NERF",
+    "Categoria": "Armi giocattolo",
+    "Bonta": "29"
+  },
+  {
+    "Tipo": "Mini tank robot",
+    "Categoria": "scienza",
+    "Bonta": "43"
+  },
+  {
+    "Tipo": "LEGO jedi starfighter di Yoda",
+    "Categoria": "Costruzioni",
+    "Bonta": "52"
+  },
+  {
+    "Tipo": "Binocolo",
+    "Categoria": "Sport",
+    "Bonta": "33"
+  },
+  {
+    "Tipo": "Canestro da basket",
+    "Categoria": "Sport",
+    "Bonta": "25"
+  },
+  {
+    "Tipo": "Monopattino",
+    "Categoria": "Veicoli",
+    "Bonta": "54"
+  },
+  {
+    "Tipo": "LEGO Star wars BB-8",
+    "Categoria": "Costruzioni",
+    "Bonta": "32"
+  },
+  {
+    "Tipo": "Passa la bomba",
+    "Categoria": "Giochi da tavolo",
+    "Bonta": "44"
+  },
+  {
+    "Tipo": "Concept",
+    "Categoria": "Giochi da tavolo",
+    "Bonta": "40"
+  },
+  {
+    "Tipo": "Anello fidget spinner",
+    "Categoria": "Svago",
+    "Bonta": "18"
+  },
+  {
+    "Tipo": "Robotime gufo sveglia",
+    "Categoria": "Orologeria",
+    "Bonta": "37"
+  },
+  {
+    "Tipo": "Iphone 13 Pro",
+    "Categoria": "Telefonia",
+    "Bonta": "94"
+  },
+  {
+    "Tipo": "Xiaomi POCO F3",
+    "Categoria": "Telefonia",
+    "Bonta": "80"
+  },
+  {
+    "Tipo": "Realme 9",
+    "Categoria": "Telefonia",
+    "Bonta": "73"
+  },
+  {
+    "Tipo": "Samsung galaxy A12",
+    "Categoria": "Telefonia",
+    "Bonta": "70"
+  },
+  {
+    "Tipo": "Doogee S96 Pro",
+    "Categoria": "Telefonia",
+    "Bonta": "85"
+  },
+  {
+    "Tipo": "Cellulare Uleway",
+    "Categoria": "Telefonia",
+    "Bonta": "53"
+  },
+  {
+    "Tipo": "Pixel 4A",
+    "Categoria": "Telefonia",
+    "Bonta": "86"
+  },
+  {
+    "Tipo": "Samsung Galaxy S20 FE",
+    "Categoria": "Telefonia",
+    "Bonta": "88"
+  },
+  {
+    "Tipo": "OnePlus Nord",
+    "Categoria": "Telefonia",
+    "Bonta": "83"
+  },
+  {
+    "Tipo": "Playstation 5",
+    "Categoria": "Videogiochi",
+    "Bonta": "96"
+  },
+  {
+    "Tipo": "Big brain academy",
+    "Categoria": "Videogiochi",
+    "Bonta": "72"
+  },
+  {
+    "Tipo": "Mario Party Superstars",
+    "Categoria": "Videogiochi",
+    "Bonta": "75"
+  },
+  {
+    "Tipo": "Farcry 6",
+    "Categoria": "Videogiochi",
+    "Bonta": "64"
+  },
+  {
+    "Tipo": "Riders republic",
+    "Categoria": "Videogiochi",
+    "Bonta": "59"
+  },
+  {
+    "Tipo": "Just dance 2022",
+    "Categoria": "Videogiochi",
+    "Bonta": "58"
+  },
+  {
+    "Tipo": "FIFA 22",
+    "Categoria": "Videogiochi",
+    "Bonta": "76"
+  },
+  {
+    "Tipo": "Call of duty Vanguard",
+    "Categoria": "Videogiochi",
+    "Bonta": "68"
+  },
+  {
+    "Tipo": "The sims 4",
+    "Categoria": "Videogiochi",
+    "Bonta": "66"
+  },
+  {
+    "Tipo": "Lenovo Legion 5 Pro",
+    "Categoria": "Videogiochi",
+    "Bonta": "97"
+  },
+  {
+    "Tipo": "Battlefield 1 Revolution",
+    "Categoria": "Videogiochi",
+    "Bonta": "69"
+  },
+  {
+    "Tipo": "Ipod touch",
+    "Categoria": "Musica",
+    "Bonta": "57"
+  },
+  {
+    "Tipo": "Quaderno smart infinito",
+    "Categoria": "Grafica",
+    "Bonta": "47"
+  },
+  {
+    "Tipo": "Smart speaker video",
+    "Categoria": "Grafica",
+    "Bonta": "36"
+  },
+  {
+    "Tipo": "Salvadanaio contasoldi digitale",
+    "Categoria": "Mobilio",
+    "Bonta": "28"
+  },
+  {
+    "Tipo": "Lampada smart da scrivania",
+    "Categoria": "Mobilio",
+    "Bonta": "38"
+  },
+  {
+    "Tipo": "Macchina radiocomandata arrampica muri",
+    "Categoria": "Sport",
+    "Bonta": "27"
+  },
+  {
+    "Tipo": "Mappamondo parlante",
+    "Categoria": "Geografia",
+    "Bonta": "31"
+  },
+  {
+    "Tipo": "Scacchiera elettronica",
+    "Categoria": "Sport",
+    "Bonta": "42"
+  },
+  {
+    "Tipo": "Furby bluetooth",
+    "Categoria": "Svago",
+    "Bonta": "19"
+  },
+  {
+    "Tipo": "Stazione arcade per console",
+    "Categoria": "Videogiochi",
+    "Bonta": "89"
+  },
+  {
+    "Tipo": "mini gamepad bluetooth",
+    "Categoria": "Videogiochi",
+    "Bonta": "21"
+  },
+  {
+    "Tipo": "Gamepad bluetooth",
+    "Categoria": "Videogiochi",
+    "Bonta": "39"
+  },
+  {
+    "Tipo": "Mclaren elettrica per bambini",
+    "Categoria": "Sport",
+    "Bonta": "91"
+  },
+  {
+    "Tipo": "Acqua scooter elettrico",
+    "Categoria": "Sport",
+    "Bonta": "92"
+  },
+  {
+    "Tipo": "Drone BB-9E",
+    "Categoria": "Svago",
+    "Bonta": "60"
+  },
+  {
+    "Tipo": "Anki Overdrive",
+    "Categoria": "Sport",
+    "Bonta": "84"
+  },
+  {
+    "Tipo": "Osmo lettere e numeri",
+    "Categoria": "Svago",
+    "Bonta": "46"
+  },
+  {
+    "Tipo": "Movetime Family Watch MT30",
+    "Categoria": "Orologeria",
+    "Bonta": "93"
+  },
+  {
+    "Tipo": "Fotocamera XP120",
+    "Categoria": "Fotografia",
+    "Bonta": "63"
+  },
+  {
+    "Tipo": "Clemphone",
+    "Categoria": "Telefonia",
+    "Bonta": "82"
+  },
+  {
+    "Tipo": "Lumin''Us",
+    "Categoria": "Musica",
+    "Bonta": "23"
+  },
+  {
+    "Tipo": "Guitar hero Live",
+    "Categoria": "Videogiochi",
+    "Bonta": "81"
+  },
+  {
+    "Tipo": "Aura drone",
+    "Categoria": "Svago",
+    "Bonta": "22"
+  },
+  {
+    "Tipo": "LEGO Duplo Steam Train",
+    "Categoria": "Costruzioni",
+    "Bonta": "17"
+  },
+  {
+    "Tipo": "Amazon Alexa",
+    "Categoria": "Musica",
+    "Bonta": "71"
+  },
+  {
+    "Tipo": "Arco con frecce",
+    "Categoria": "Sport",
+    "Bonta": "48"
+  },
+  {
+    "Tipo": "Nintendo DS",
+    "Categoria": "Videogiochi",
+    "Bonta": "77"
+  },
+  {
+    "Tipo": "Nintendo 3DS",
+    "Categoria": "Videogiochi",
+    "Bonta": "79"
+  },
+  {
+    "Tipo": "Kart elettrico per bambini",
+    "Categoria": "Sport",
+    "Bonta": "67"
+  },
+  {
+    "Tipo": "Vespa cavalcabile per bambini",
+    "Categoria": "Sport",
+    "Bonta": "16"
+  },
+  {
+    "Tipo": "Set Adopt me Roblox",
+    "Categoria": "Svago",
+    "Bonta": "15"
+  },
+  {
+    "Tipo": "LEGO Super mario",
+    "Categoria": "Costruzioni",
+    "Bonta": "20"
+  },
+  {
+    "Tipo": "Betsy coniglietta interattiva",
+    "Categoria": "Svago",
+    "Bonta": "15"
+  },
+  {
+    "Tipo": "Unicorno cavalcabile",
+    "Categoria": "Svago",
+    "Bonta": "14"
+  },
+  {
+    "Tipo": "Pallone LED",
+    "Categoria": "Sport",
+    "Bonta": "26"
+  },
+  {
+    "Tipo": "Guanti Iron man",
+    "Categoria": "Svago",
+    "Bonta": "13"
+  },
+  {
+    "Tipo": "Kit per costruzione macchine",
+    "Categoria": "Scienza",
+    "Bonta": "56"
+  },
+  {
+    "Tipo": "Makey Makey",
+    "Categoria": "Scienza",
+    "Bonta": "24"
+  },
+  {
+    "Tipo": "Littlebits",
+    "Categoria": "Svago",
+    "Bonta": "30"
+  },
+  {
+    "Tipo": "Sistema Modulare Architettonico",
+    "Categoria": "Costruzioni",
+    "Bonta": "50"
+  },
+  {
+    "Tipo": "Set introduzione meccanismi",
+    "Categoria": "Scienza",
+    "Bonta": "41"
+  },
+  {
+    "Tipo": "Laboratorio primi 100 esperimenti",
+    "Categoria": "Scienza",
+    "Bonta": "61"
+  },
+  {
+    "Tipo": "Rush hour traffic jam",
+    "Categoria": "Svago",
+    "Bonta": "11"
+  },
+  {
+    "Tipo": "Gravity maze",
+    "Categoria": "Svago",
+    "Bonta": "12"
+  },
+  {
+    "Tipo": "Cabinato arcade Street figher",
+    "Categoria": "Videogiochi",
+    "Bonta": "98"
+  },
+  {
+    "Tipo": "Macchina pallacanestro elettronico",
+    "Categoria": "Sport",
+    "Bonta": "95"
+  },
+  {
+    "Tipo": "Caricabatterie wireless",
+    "Categoria": "Telefonia",
+    "Bonta": "20"
+  },
+  {
+    "Tipo": "iDoo giardino da interni",
+    "Categoria": "Scienza",
+    "Bonta": "90"
+  },
+  {
+    "Tipo": "Tazza smart",
+    "Categoria": "Svago",
+    "Bonta": "49"
+  },
+  {
+    "Tipo": "Stampante 3D",
+    "Categoria": "Svago",
+    "Bonta": "90"
+  },
+  {
+    "Tipo": "Auricolari bluetooth Homscam",
+    "Categoria": "Musica",
+    "Bonta": "51"
+  },
+  {
+    "Tipo": "Auricolari bluetooth Huawei",
+    "Categoria": "Musica",
+    "Bonta": "62"
+  },
+  {
+    "Tipo": "Samsung Galaxy Z Flip 3 5G",
+    "Categoria": "Telefonia",
+    "Bonta": "95"
+  },
+  {
+    "Tipo": "LG C1",
+    "Categoria": "Mobilio",
+    "Bonta": "99"
+  },
+  {
+    "Tipo": "Samsung TV Neo QLED QN90A",
+    "Categoria": "Mobilio",
+    "Bonta": "100"
+  },
+  {
+    "Tipo": "Robot aspirapolvere lavapavimenti",
+    "Categoria": "Mobilio",
+    "Bonta": "96"
+  },
+  {
+    "Tipo": "Purrble",
+    "Categoria": "Svago",
+    "Bonta": "83"
+  },
+  {
+    "Tipo": "Story time chess",
+    "Categoria": "Sport",
+    "Bonta": "82"
+  },
+  {
+    "Tipo": "Macinacaffè Fellow",
+    "Categoria": "Alimentari",
+    "Bonta": "86"
+  },
+  {
+    "Tipo": "Set candele profumate",
+    "Categoria": "Mobilio",
+    "Bonta": "16"
+  },
+  {
+    "Tipo": "Borraccia in acciaio",
+    "Categoria": "Alimentari",
+    "Bonta": "22"
+  },
+  {
+    "Tipo": "Tazza obiettivo",
+    "Categoria": "Alimentari",
+    "Bonta": "17"
+  },
+  {
+    "Tipo": "Organizer da scrivania",
+    "Categoria": "Mobilio",
+    "Bonta": "48"
+  },
+  {
+    "Tipo": "Organizer da viaggio",
+    "Categoria": "Mobilio",
+    "Bonta": "37"
+  },
+  {
+    "Tipo": "Dispenser di post-it",
+    "Categoria": "Svago",
+    "Bonta": "23"
+  },
+  {
+    "Tipo": "Mini ventilatore USB flessibile",
+    "Categoria": "Svago",
+    "Bonta": "21"
+  },
+  {
+    "Tipo": "Zaiono North face",
+    "Categoria": "Abbigliamento",
+    "Bonta": "52"
+  },
+  {
+    "Tipo": "Sciarpa Uniqlo",
+    "Categoria": "Abbigliamento",
+    "Bonta": "32"
+  },
+  {
+    "Tipo": "Swatch x Peanuts",
+    "Categoria": "Orologeria",
+    "Bonta": "29"
+  },
+  {
+    "Tipo": "Nike court royale 2 mid",
+    "Categoria": "Abbigliamento",
+    "Bonta": "33"
+  },
+  {
+    "Tipo": "Bracciale Armani",
+    "Categoria": "Abbigliamento",
+    "Bonta": "46"
+  },
+  {
+    "Tipo": "Polaroid Hi-print",
+    "Categoria": "Fotografia",
+    "Bonta": "38"
+  },
+  {
+    "Tipo": "Soundbar",
+    "Categoria": "Musica",
+    "Bonta": "66"
+  },
+  {
+    "Tipo": "Coperta indossabile",
+    "Categoria": "Abbigliamento",
+    "Bonta": "54"
+  },
+  {
+    "Tipo": "Sterilizzatore UV",
+    "Categoria": "Svago",
+    "Bonta": "47"
+  },
+  {
+    "Tipo": "Ferro arricciacapelli 5",
+    "Categoria": "Moda",
+    "Bonta": "63"
+  },
+  {
+    "Tipo": "Massaggiatore per muscoli",
+    "Categoria": "Salute",
+    "Bonta": "45"
+  },
+  {
+    "Tipo": "Carrello primi passi",
+    "Categoria": "Svago",
+    "Bonta": "49"
+  },
+  {
+    "Tipo": "Tappeto gioco",
+    "Categoria": "Svago",
+    "Bonta": "61"
+  },
+  {
+    "Tipo": "Adidas stan smith",
+    "Categoria": "Abbigliamento",
+    "Bonta": "64"
+  },
+  {
+    "Tipo": "Trivial pursuit",
+    "Categoria": "Giochi da tavolo",
+    "Bonta": "43"
+  },
+  {
+    "Tipo": "Agenda produttivita",
+    "Categoria": "Libri",
+    "Bonta": "14"
+  },
+  {
+    "Tipo": "Tavolino da letto regolabile",
+    "Categoria": "Mobilio",
+    "Bonta": "34"
+  },
+  {
+    "Tipo": "Montalatte elettrico",
+    "Categoria": "Alimentari",
+    "Bonta": "36"
+  },
+  {
+    "Tipo": "Lampada game over",
+    "Categoria": "Mobilio",
+    "Bonta": "44"
+  },
+  {
+    "Tipo": "Lampada pac-man",
+    "Categoria": "Mobilio",
+    "Bonta": "39"
+  },
+  {
+    "Tipo": "Orologio Timberland",
+    "Categoria": "Abbigliamento",
+    "Bonta": "56"
+  },
+  {
+    "Tipo": "LEGO Star wars raider",
+    "Categoria": "Costruzioni",
+    "Bonta": "42"
+  },
+  {
+    "Tipo": "1 Million Paco Rabanne",
+    "Categoria": "Moda",
+    "Bonta": "55"
+  },
+  {
+    "Tipo": "Braccialetto Swarovski",
+    "Categoria": "Abbigliamento",
+    "Bonta": "57"
+  },
+  {
+    "Tipo": "Console retrò",
+    "Categoria": "Videogiochi",
+    "Bonta": "67"
+  },
+  {
+    "Tipo": "UGG classic mini",
+    "Categoria": "Abbigliamento",
+    "Bonta": "73"
+  },
+  {
+    "Tipo": "Collana Swarovski",
+    "Categoria": "Abbigliamento",
+    "Bonta": "53"
+  },
+  {
+    "Tipo": "Braccialetto Pandora",
+    "Categoria": "Abbigliamento",
+    "Bonta": "41"
+  },
+  {
+    "Tipo": "Sveglia Star wars",
+    "Categoria": "Mobilio",
+    "Bonta": "51"
+  },
+  {
+    "Tipo": "Biancheria letto",
+    "Categoria": "Mobilio",
+    "Bonta": "25"
+  },
+  {
+    "Tipo": "Lampada 3D Darth vader",
+    "Categoria": "Mobilio",
+    "Bonta": "58"
+  },
+  {
+    "Tipo": "LEGO Star wars Stormtrooper helmet",
+    "Categoria": "Costruzioni",
+    "Bonta": "65"
+  },
+  {
+    "Tipo": "Scacchi Wizard",
+    "Categoria": "Sport",
+    "Bonta": "35"
+  },
+  {
+    "Tipo": "Lampada scudo Captain America",
+    "Categoria": "Mobilio",
+    "Bonta": "59"
+  },
+  {
+    "Tipo": "Accappatoio Captain America",
+    "Categoria": "Abbigliamento",
+    "Bonta": "31"
+  },
+  {
+    "Tipo": "Minipresso",
+    "Categoria": "Alimentari",
+    "Bonta": "28"
+  },
+  {
+    "Tipo": "Action camera",
+    "Categoria": "Fotografia",
+    "Bonta": "75"
+  },
+  {
+    "Tipo": "Stazione meteorologica",
+    "Categoria": "Scienza",
+    "Bonta": "71"
+  },
+  {
+    "Tipo": "Tenda gioco",
+    "Categoria": "Mobilio",
+    "Bonta": "68"
+  },
+  {
+    "Tipo": "Poltroncina per bambini",
+    "Categoria": "Mobilio",
+    "Bonta": "50"
+  },
+  {
+    "Tipo": "Gasatore di acqua",
+    "Categoria": "Alimentari",
+    "Bonta": "30"
+  },
+  {
+    "Tipo": "Portafoglio",
+    "Categoria": "Moda",
+    "Bonta": "27"
+  },
+  {
+    "Tipo": "LEGO Technic Ducati",
+    "Categoria": "Costruzioni",
+    "Bonta": "74"
+  },
+  {
+    "Tipo": "Apple airpods",
+    "Categoria": "Musica",
+    "Bonta": "87"
+  },
+  {
+    "Tipo": "Stazione di ricarica",
+    "Categoria": "Mobilio",
+    "Bonta": "78"
+  },
+  {
+    "Tipo": "Ring fit",
+    "Categoria": "Videogiochi",
+    "Bonta": "91"
+  },
+  {
+    "Tipo": "Weekend a Venezia",
+    "Categoria": "Viaggi",
+    "Bonta": "95"
+  },
+  {
+    "Tipo": "Lampada altoparlante levitante",
+    "Categoria": "Mobilio",
+    "Bonta": "85"
+  },
+  {
+    "Tipo": "Harry Potter Box",
+    "Categoria": "Libri",
+    "Bonta": "84"
+  },
+  {
+    "Tipo": "Borsa a tracolla Converse",
+    "Categoria": "Moda",
+    "Bonta": "40"
+  },
+  {
+    "Tipo": "Autopompa vigili del fuoco",
+    "Categoria": "Sport",
+    "Bonta": "62"
+  },
+  {
+    "Tipo": "Divano letto gonfiabile",
+    "Categoria": "Mobilio",
+    "Bonta": "92"
+  },
+  {
+    "Tipo": "Speaker fluttuante",
+    "Categoria": "Musica",
+    "Bonta": "81"
+  },
+  {
+    "Tipo": "Balestra giocattolo",
+    "Categoria": "Armi giocattolo",
+    "Bonta": "77"
+  },
+  {
+    "Tipo": "Chitarra elettrica",
+    "Categoria": "Musica",
+    "Bonta": "94"
+  },
+  {
+    "Tipo": "Ukulele",
+    "Categoria": "Musica",
+    "Bonta": "76"
+  },
+  {
+    "Tipo": "Coperta riscaldante",
+    "Categoria": "Mobilio",
+    "Bonta": "78"
+  },
+  {
+    "Tipo": "Orso Ettore",
+    "Categoria": "Svago",
+    "Bonta": "26"
+  },
+  {
+    "Tipo": "Spada elettronica Star wars",
+    "Categoria": "Armi giocattolo",
+    "Bonta": "30"
+  },
+  {
+    "Tipo": "Quad elettrico",
+    "Categoria": "Veicoli",
+    "Bonta": "79"
+  },
+  {
+    "Tipo": "Gogò Hasbro",
+    "Categoria": "Svago",
+    "Bonta": "12"
+  },
+  {
+    "Tipo": "Poggiapiedi riscaldato",
+    "Categoria": "Mobilio",
+    "Bonta": "23"
+  },
+  {
+    "Tipo": "Calzini riscaldanti",
+    "Categoria": "Abbigliamento",
+    "Bonta": "24"
+  },
+  {
+    "Tipo": "Scanner portatile",
+    "Categoria": "Libri",
+    "Bonta": "19"
+  },
+  {
+    "Tipo": "Poltrona pouf",
+    "Categoria": "Mobilio",
+    "Bonta": "89"
+  },
+  {
+    "Tipo": "Tastiera musicale pieghevole",
+    "Categoria": "Musica",
+    "Bonta": "73"
+  },
+  {
+    "Tipo": "Puzzle 3D stadio San Siro",
+    "Categoria": "Costruzioni",
+    "Bonta": "90"
+  },
+  {
+    "Tipo": "Piscina rettangolare",
+    "Categoria": "Sport",
+    "Bonta": "97"
+  },
+  {
+    "Tipo": "Macchina per ghiaccioli",
+    "Categoria": "Alimentari",
+    "Bonta": "18"
+  },
+  {
+    "Tipo": "Orologio da parete",
+    "Categoria": "Orologeria",
+    "Bonta": "20"
+  },
+  {
+    "Tipo": "Biancheria intima termica",
+    "Categoria": "Abbigliamento",
+    "Bonta": "60"
+  },
+  {
+    "Tipo": "Corso di sopravvivenza",
+    "Categoria": "Viaggi",
+    "Bonta": "72"
+  },
+  {
+    "Tipo": "Giornata in una SPA",
+    "Categoria": "Viaggi",
+    "Bonta": "99"
+  },
+  {
+    "Tipo": "Zaino picnic",
+    "Categoria": "Abbigliamento",
+    "Bonta": "13"
+  },
+  {
+    "Tipo": "Peluche pecora shirley",
+    "Categoria": "Svago",
+    "Bonta": "15"
+  },
+  {
+    "Tipo": "Impianto Hi-fi stereo",
+    "Categoria": "Musica",
+    "Bonta": "100"
+  },
+  {
+    "Tipo": "Chitarra acustica",
+    "Categoria": "Musica",
+    "Bonta": "88"
+  },
+  {
+    "Tipo": "Cofanetto manicure",
+    "Categoria": "Moda",
+    "Bonta": "70"
+  },
+  {
+    "Tipo": "Calcolatrice in bambù",
+    "Categoria": "Scienza",
+    "Bonta": "11"
+  },
+  {
+    "Tipo": "Face cleansing",
+    "Categoria": "Moda",
+    "Bonta": "80"
+  },
+  {
+    "Tipo": "Epilatore con spazzola",
+    "Categoria": "Moda",
+    "Bonta": "69"
+  },
+  {
+    "Tipo": "Settimana bianca",
+    "Categoria": "Viaggi",
+    "Bonta": "93"
+  },
+  {
+    "Tipo": "Vacanza alle Maldive",
+    "Categoria": "Viaggi",
+    "Bonta": "98"
+  }
+]

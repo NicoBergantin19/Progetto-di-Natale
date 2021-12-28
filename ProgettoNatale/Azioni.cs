@@ -68,7 +68,24 @@ namespace ProgettoNatale
 
         private void View_Gifts_Click(object sender, EventArgs e) //Inserimento dati dei regali quando si clicca
         {
-
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Regali", connection);
+            DataTable dt = new DataTable(); //Crea una tabella virtuale
+            sda.Fill(dt);
+            //Controllo se la tabella esiste già, se esiste non inserisce i nomi
+            if (dt.Rows[0][0].ToString() == "0")
+            {
+                List<Regalo> regali = JsonConvert.DeserializeObject<List<Regalo>>(File.ReadAllText("ListaRegali.json"));
+                foreach (Regalo reg in regali)
+                {
+                    reg.Bonta = Convert.ToInt32(reg.Bonta);
+                    SqlCommand cmd = new SqlCommand($"INSERT INTO Regali (Tipo, Categoria, Bonta) VALUES ('{reg.Tipo}', '{reg.Categoria}', {reg.Bonta});", connection);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            //Aggiungere il form che si apre
+            Regali form = new Regali(connection);
+            form.Show();
+            this.Hide();
         }
 
         private void Search_Click(object sender, EventArgs e)   //Ricerca tra tabelle 
@@ -113,5 +130,12 @@ namespace ProgettoNatale
         public string Nome;
         public string Continente;
         public string Fuso_Orario;
+    }
+
+    public class Regalo
+    {
+        public string Tipo;
+        public string Categoria;
+        public int Bonta;
     }
 }
