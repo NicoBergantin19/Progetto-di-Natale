@@ -114,7 +114,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_regali = "CREATE TABLE Reagli(ID_Regalo int IDENTITY(1,1), Tipo varchar(MAX) NOT NULL, Categoria varchar(MAX), Bonta int, PRIMARY KEY(ID_Regalo));"; //query creazione tabella
+                string tab_regali = "CREATE TABLE Regali(ID_Regalo int IDENTITY(1,1), Tipo varchar(MAX) NOT NULL, Categoria varchar(MAX), Bonta int, PRIMARY KEY(ID_Regalo));"; //query creazione tabella
                 SqlCommand cmd = new SqlCommand(tab_regali, connection);
                 try
                 {
