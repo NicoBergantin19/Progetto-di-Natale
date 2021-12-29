@@ -71,5 +71,19 @@ namespace ProgettoNatale
         {
 
         }
+
+        private void Creazione_Account_Load(object sender, EventArgs e)
+        {
+            if (connection.State == ConnectionState.Closed)
+                connection.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Account WHERE Tipo_Account = 'Amministratore'", connection);
+            int check = (int)cmd.ExecuteScalar();
+            if (check == 1)
+                radioBabbo.Enabled = false;
+
+            if (connection.State == ConnectionState.Open)
+                connection.Close();
+        }
     }
 }
