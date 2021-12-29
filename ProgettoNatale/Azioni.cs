@@ -39,7 +39,7 @@ namespace ProgettoNatale
                 List<Bambino> Bambini_Sfruttati = new List<Bambino>();
                 Random rand = new Random(DateTime.Now.Second);
                 RandomName nameGen = new RandomName(rand);
-                List<string> Names = nameGen.RandomNames(50000, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
+                List<string> Names = nameGen.RandomNames(50000000, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
                 Random rnd = new Random();
                 foreach (string name in Names)
                 {
