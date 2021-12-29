@@ -43,3 +43,7 @@ C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Regali
 C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Creazione_Account.resources
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Creazione_Account.resources
 D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Regali.resources
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Azioni_Elfo.resources
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Consegne.resources
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Impostazioni_Profilo.resources
+C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Mappa.resources

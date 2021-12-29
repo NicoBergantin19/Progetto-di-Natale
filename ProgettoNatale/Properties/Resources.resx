@@ -118,8 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="WhatsApp Image 2021-12-29 at 21.48.39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\immagini\WhatsApp Image 2021-12-29 at 21.48.39.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2021-12-29 at 21.48.39 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\immagini\WhatsApp Image 2021-12-29 at 21.48.39 (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sfondo_Azioni" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\immagini\Sfondo_Azioni.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elfoAccount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\immagini\elfoAccount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2021-12-29 at 21.48.39 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\immagini\WhatsApp Image 2021-12-29 at 21.48.39 (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="animated-santa-claus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\immagini\animated-santa-claus.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,7 +139,10 @@
   <data name="christmas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\immagini\christmas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="elfoAccount" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\immagini\elfoAccount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="christmas-tree-gettyimages-1072744106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\immagini\christmas-tree-gettyimages-1072744106.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2021-12-29 at 22.53.23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\immagini\WhatsApp Image 2021-12-29 at 22.53.23.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

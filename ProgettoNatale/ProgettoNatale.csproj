@@ -55,11 +55,23 @@
     <Compile Include="Azioni.Designer.cs">
       <DependentUpon>Azioni.cs</DependentUpon>
     </Compile>
+    <Compile Include="Azioni_Elfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Azioni_Elfo.Designer.cs">
+      <DependentUpon>Azioni_Elfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bambini.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Bambini.Designer.cs">
       <DependentUpon>Bambini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consegne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consegne.Designer.cs">
+      <DependentUpon>Consegne.cs</DependentUpon>
     </Compile>
     <Compile Include="Creazione_Account.cs">
       <SubType>Form</SubType>
@@ -73,6 +85,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Impostazioni_Profilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impostazioni_Profilo.Designer.cs">
+      <DependentUpon>Impostazioni_Profilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mappa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mappa.Designer.cs">
+      <DependentUpon>Mappa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomName.cs" />
@@ -85,14 +109,26 @@
     <EmbeddedResource Include="Azioni.resx">
       <DependentUpon>Azioni.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Azioni_Elfo.resx">
+      <DependentUpon>Azioni_Elfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bambini.resx">
       <DependentUpon>Bambini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consegne.resx">
+      <DependentUpon>Consegne.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Creazione_Account.resx">
       <DependentUpon>Creazione_Account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impostazioni_Profilo.resx">
+      <DependentUpon>Impostazioni_Profilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappa.resx">
+      <DependentUpon>Mappa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -132,6 +168,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="immagini\elfoAccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="immagini\christmas-tree-gettyimages-1072744106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="immagini\WhatsApp Image 2021-12-29 at 21.48.39 %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="immagini\WhatsApp Image 2021-12-29 at 21.48.39 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="immagini\WhatsApp Image 2021-12-29 at 21.48.39.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="immagini\WhatsApp Image 2021-12-29 at 22.53.23.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

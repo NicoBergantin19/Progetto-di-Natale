@@ -83,6 +83,16 @@ namespace ProgettoNatale.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap christmas_tree_gettyimages_1072744106 {
+            get {
+                object obj = ResourceManager.GetObject("christmas-tree-gettyimages-1072744106", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap elfoAccount {
             get {
                 object obj = ResourceManager.GetObject("elfoAccount", resourceCulture);
@@ -96,6 +106,46 @@ namespace ProgettoNatale.Properties {
         internal static System.Drawing.Bitmap Sfondo_Azioni {
             get {
                 object obj = ResourceManager.GetObject("Sfondo_Azioni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_12_29_at_21_48_39 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-12-29 at 21.48.39", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_12_29_at_21_48_39__1_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-12-29 at 21.48.39 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_12_29_at_21_48_39__2_ {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-12-29 at 21.48.39 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_12_29_at_22_53_23 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-12-29 at 22.53.23", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
