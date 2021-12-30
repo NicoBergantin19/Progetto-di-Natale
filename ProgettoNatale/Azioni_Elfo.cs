@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProgettoNatale
 {
     public partial class Azioni_Elfo : Form
     {
-        public Azioni_Elfo()
+        SqlConnection connection;
+        public Azioni_Elfo(SqlConnection conn)
         {
             InitializeComponent();
+            connection = conn;
+        }
+
+        private void View_Kids_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

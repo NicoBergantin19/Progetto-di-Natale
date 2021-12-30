@@ -82,6 +82,7 @@
             this.View_Kids.TabIndex = 5;
             this.View_Kids.Text = "BAMBINI";
             this.View_Kids.UseVisualStyleBackColor = false;
+            this.View_Kids.Click += new System.EventHandler(this.View_Kids_Click);
             // 
             // label2
             // 
@@ -91,7 +92,7 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(23, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 61);
+            this.label2.Size = new System.Drawing.Size(125, 58);
             this.label2.TabIndex = 9;
             this.label2.Text = "Menù:";
             // 

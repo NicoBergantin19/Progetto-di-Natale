@@ -26,7 +26,7 @@ namespace ProgettoNatale
         /// Quando si preme il bottone "Accedi" viene creato il Databse "Natale" con 
         /// le varie tabelle utili
         /// </summary>
-        private void button1_Click(object sender, EventArgs e)  
+        private void button1_Click(object sender, EventArgs e)
         {
             if (connectionTabelle.State != ConnectionState.Open)
             {
@@ -38,8 +38,8 @@ namespace ProgettoNatale
                 {
                     MessageBox.Show(error.ToString());
                 }
-            }        
-            
+            }
+
             //Controllo esistenza account nel database
             string query = "SELECT ID_Account FROM Account;";
             SqlCommand cmd = new SqlCommand(query, connectionTabelle);
@@ -83,31 +83,41 @@ namespace ProgettoNatale
             return hash.ToString();
         }
 
-        internal void Check_Account(SqlConnection connection) 
+        internal void Check_Account(SqlConnection connection)
         {
             string passCrip = Crittografia(textBox2.Text);
-            // Prende tutti i dati dalla tabella e controlla se i dati inseriti nel form di accesso corrispondono a quelli del database
-            SqlDataAdapter sda = new SqlDataAdapter($"SELECT COUNT(*) FROM Account WHERE Username = '{textBox1.Text}' AND Password = '{passCrip}'", connection);
-            DataTable dt = new DataTable(); //Crea una tabella virtuale
+            //Attraverso la select cerca nella tabella i dati inseriti dall'utente
+            SqlDataAdapter sda = new SqlDataAdapter($"SELECT Tipo_Account FROM Account WHERE Username= '{textBox1.Text}' AND Password='{passCrip}'", connection);
+            DataTable dt = new DataTable();
             sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if (dt.Rows.Count == 1)
             {
-                Azioni azioni = new Azioni(connection);
-                azioni.Show();
-                this.Hide();
+                switch (dt.Rows[0]["Tipo_Account"].ToString())
+                {
+                    case "Amministratore":
+                        this.Hide();
+                        Azioni aa = new Azioni(connectionTabelle);
+                        aa.Show();
+                        break;
+
+                    case "Lavoratore":
+                        this.Hide();
+                        Azioni_Elfo ae = new Azioni_Elfo(connectionTabelle);
+                        ae.Show();
+                        break;
+                }
             }
             else
             {
-                MessageBox.Show("Username o password non valido");                
+                MessageBox.Show("Username o password non valido", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
-        }  
+        }
 
         internal void Gifts_Table(SqlConnection connection)
         {
             string query = @"SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Regali';"; //query per vedere se esiste una tabella chiamata "Regali"
-                                                                                                     //se il reader restituisce delle righe vuol dire che esiste
+                                                                                                    //se il reader restituisce delle righe vuol dire che esiste
             SqlCommand controllo = new SqlCommand(query, connection);
             SqlDataReader reader = controllo.ExecuteReader();
             if (reader.HasRows == false)    //Controllo esistenza tabella
@@ -188,7 +198,7 @@ namespace ProgettoNatale
             {
                 MessageBox.Show("Errore nell'istanziare la connessione per la tabella degli account: " + error.ToString());
             }
-            
+
             string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Account';";
             SqlCommand controllo = new SqlCommand(query, connectionTabelle);
             SqlDataReader reader = controllo.ExecuteReader();
@@ -218,7 +228,7 @@ namespace ProgettoNatale
         /// in automatico 
         /// </summary>
         private void Form1_Load(object sender, EventArgs e)
-        {           
+        {
             //Connessione al database master
             try
             {
@@ -232,7 +242,7 @@ namespace ProgettoNatale
             string query = "IF NOT EXISTS(SELECT * FROM sys.databases where name = 'Natale') CREATE DATABASE Natale";
             SqlCommand cmd = new SqlCommand(query, connectionDatabase);
             try
-            {               
+            {
                 cmd.ExecuteNonQuery();
                 connectionDatabase.Close();
             }
