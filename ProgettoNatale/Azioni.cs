@@ -29,6 +29,47 @@ namespace ProgettoNatale
 
         private void View_Kids_Click(object sender, EventArgs e) //Inserimento dati dei bambini quando si clicca
         {
+            Insert_Kids(connection);
+            Bambini bambini = new Bambini(connection);
+            bambini.Show();
+            this.Hide();
+        }
+
+        private void View_Gifts_Click(object sender, EventArgs e) //Inserimento dati dei regali quando si clicca
+        {
+            Insert_Gifts(connection);   
+            Regali form = new Regali(connection);
+            form.Show();
+            this.Hide();
+        }
+
+        /// <summary>
+        /// La mappa sarà composta da un dato orario e una tabella con i bambini e i regali,
+        /// l'orario è collegato ad una certa nazione, sarà presente un bottone che modifica l'orario 
+        /// mandandolo avanti di un'ora. Quindi le tabelle vengono aggiornate togliendo i bambini 
+        /// che hanno ricevuto il regalo in quella determinata nazione.
+        /// </summary>
+        private void button1_Click(object sender, EventArgs e)  //See_Map
+        {
+
+        }
+
+
+        ////////////////////////////////////////////////////////////////Metodi///////////////////////////////////////////////////////////////////////////////
+
+        internal void Aggiungi_Nazioni(SqlConnection connection)
+        {
+            List<Nazioni> Dc = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
+            foreach (Nazioni dp in Dc)
+            {
+                string query = $"INSERT INTO Nazioni (Nome, Continente, Fuso_Orario) VALUES ('{dp.Nome}', '{dp.Continente}', '{dp.Fuso_Orario}')";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        internal void Insert_Kids(SqlConnection connection)
+        {
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Bambini", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
             sda.Fill(dt);
@@ -58,15 +99,11 @@ namespace ProgettoNatale
                     {
                         MessageBox.Show("Inserimento dei bambini non andato a buon fine: " + error.Message);
                     }
-                }               
+                }
             }
-
-            Bambini bambini = new Bambini(connection);
-            bambini.Show();
-            this.Hide();
         }
 
-        private void View_Gifts_Click(object sender, EventArgs e) //Inserimento dati dei regali quando si clicca
+        internal void Insert_Gifts(SqlConnection connection)
         {
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Regali", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
@@ -81,37 +118,6 @@ namespace ProgettoNatale
                     SqlCommand cmd = new SqlCommand($"INSERT INTO Regali (Tipo, Categoria, Bonta) VALUES ('{reg.Tipo}', '{reg.Categoria}', {reg.Bonta});", connection);
                     cmd.ExecuteNonQuery();
                 }
-            }
-            //Aggiungere il form che si apre
-            Regali form = new Regali(connection);
-            form.Show();
-            this.Hide();
-        }
-
-        private void Search_Click(object sender, EventArgs e)   //Ricerca tra tabelle 
-        {
-
-        }
-
-        /// <summary>
-        /// La mappa sarà composta da un dato orario e una tabella con i bambini e i regali,
-        /// l'orario è collegato ad una certa nazione, sarà presente un bottone che modifica l'orario 
-        /// mandandolo avanti di un'ora. Quindi le tabelle vengono aggiornate togliendo i bambini 
-        /// che hanno ricevuto il regalo in quella determinata nazione.
-        /// </summary>
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        internal void Aggiungi_Nazioni(SqlConnection connection)
-        {
-            List<Nazioni> Dc = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
-            foreach (Nazioni dp in Dc)
-            {
-                string query = $"INSERT INTO Nazioni (Nome, Continente, Fuso_Orario) VALUES ('{dp.Nome}', '{dp.Continente}', '{dp.Fuso_Orario}')";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
             }
         }
     }

@@ -28,36 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.See_Map = new System.Windows.Forms.Button();
-            this.View_Gifts = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.View_Kids = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.View_Gifts = new System.Windows.Forms.Button();
+            this.Impostazioni_Profilo = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // See_Map
-            // 
-            this.See_Map.BackColor = System.Drawing.Color.Chocolate;
-            this.See_Map.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.See_Map.ForeColor = System.Drawing.Color.White;
-            this.See_Map.Location = new System.Drawing.Point(260, 363);
-            this.See_Map.Name = "See_Map";
-            this.See_Map.Size = new System.Drawing.Size(260, 115);
-            this.See_Map.TabIndex = 8;
-            this.See_Map.Text = "REGALI";
-            this.See_Map.UseVisualStyleBackColor = false;
-            // 
-            // View_Gifts
-            // 
-            this.View_Gifts.BackColor = System.Drawing.Color.Chocolate;
-            this.View_Gifts.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.View_Gifts.ForeColor = System.Drawing.Color.White;
-            this.View_Gifts.Location = new System.Drawing.Point(487, 162);
-            this.View_Gifts.Name = "View_Gifts";
-            this.View_Gifts.Size = new System.Drawing.Size(260, 115);
-            this.View_Gifts.TabIndex = 7;
-            this.View_Gifts.Text = "IMPOSTAZIONI PROFILO";
-            this.View_Gifts.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -96,15 +72,41 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Menù:";
             // 
+            // View_Gifts
+            // 
+            this.View_Gifts.BackColor = System.Drawing.Color.Chocolate;
+            this.View_Gifts.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.View_Gifts.ForeColor = System.Drawing.Color.White;
+            this.View_Gifts.Location = new System.Drawing.Point(506, 162);
+            this.View_Gifts.Name = "View_Gifts";
+            this.View_Gifts.Size = new System.Drawing.Size(260, 115);
+            this.View_Gifts.TabIndex = 10;
+            this.View_Gifts.Text = "REGALI";
+            this.View_Gifts.UseVisualStyleBackColor = false;
+            this.View_Gifts.Click += new System.EventHandler(this.View_Gifts_Click);
+            // 
+            // Impostazioni_Profilo
+            // 
+            this.Impostazioni_Profilo.BackColor = System.Drawing.Color.Chocolate;
+            this.Impostazioni_Profilo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Impostazioni_Profilo.ForeColor = System.Drawing.Color.White;
+            this.Impostazioni_Profilo.Location = new System.Drawing.Point(258, 351);
+            this.Impostazioni_Profilo.Name = "Impostazioni_Profilo";
+            this.Impostazioni_Profilo.Size = new System.Drawing.Size(260, 115);
+            this.Impostazioni_Profilo.TabIndex = 11;
+            this.Impostazioni_Profilo.Text = "IMPOSTAZIONI PROFILO";
+            this.Impostazioni_Profilo.UseVisualStyleBackColor = false;
+            this.Impostazioni_Profilo.Click += new System.EventHandler(this.Impostazioni_Profilo_Click);
+            // 
             // Azioni_Elfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProgettoNatale.Properties.Resources.WhatsApp_Image_2021_12_29_at_21_48_39__1_;
             this.ClientSize = new System.Drawing.Size(797, 490);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.See_Map);
+            this.Controls.Add(this.Impostazioni_Profilo);
             this.Controls.Add(this.View_Gifts);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.View_Kids);
             this.Name = "Azioni_Elfo";
@@ -115,11 +117,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button See_Map;
-        private System.Windows.Forms.Button View_Gifts;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button View_Kids;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button View_Gifts;
+        private System.Windows.Forms.Button Impostazioni_Profilo;
     }
 }

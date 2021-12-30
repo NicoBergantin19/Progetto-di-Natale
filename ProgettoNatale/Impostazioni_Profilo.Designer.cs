@@ -38,7 +38,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -105,7 +105,7 @@
             this.label3.Location = new System.Drawing.Point(6, 114);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(367, 61);
+            this.label3.Size = new System.Drawing.Size(353, 58);
             this.label3.TabIndex = 26;
             this.label3.Text = "Impostazioni Profilo";
             // 
@@ -151,18 +151,19 @@
             this.textBox4.Size = new System.Drawing.Size(449, 22);
             this.textBox4.TabIndex = 27;
             // 
-            // button3
+            // Back
             // 
-            this.button3.BackColor = System.Drawing.Color.Chocolate;
-            this.button3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(701, 454);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(264, 79);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "TORNA SULLA HOME";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Back.BackColor = System.Drawing.Color.Chocolate;
+            this.Back.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Back.ForeColor = System.Drawing.Color.White;
+            this.Back.Location = new System.Drawing.Point(701, 454);
+            this.Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(264, 79);
+            this.Back.TabIndex = 31;
+            this.Back.Text = "TORNA SULLA HOME";
+            this.Back.UseVisualStyleBackColor = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // button1
             // 
@@ -176,6 +177,7 @@
             this.button1.TabIndex = 32;
             this.button1.Text = "MODIFICA ACCOUNT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Impostazioni_Profilo
             // 
@@ -185,7 +187,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(984, 544);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label5);
@@ -215,7 +217,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Button button1;
     }
 }
