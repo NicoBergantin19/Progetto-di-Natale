@@ -124,7 +124,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(519, 319);
+            this.textBox3.Location = new System.Drawing.Point(522, 229);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(449, 22);
@@ -145,7 +145,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(519, 229);
+            this.textBox4.Location = new System.Drawing.Point(522, 319);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(449, 22);
