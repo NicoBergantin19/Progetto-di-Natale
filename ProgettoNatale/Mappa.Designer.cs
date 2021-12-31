@@ -70,7 +70,7 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(56, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 61);
+            this.label2.Size = new System.Drawing.Size(146, 58);
             this.label2.TabIndex = 8;
             this.label2.Text = "Mappa:";
             // 
@@ -151,6 +151,7 @@
             this.button3.TabIndex = 21;
             this.button3.Text = "TORNA SULLA HOME";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Mappa
             // 
