@@ -14,7 +14,7 @@ namespace ProgettoNatale
     public partial class Azioni_Elfo : Form
     {
         SqlConnection connection;
-        public Azioni_Elfo(SqlConnection conn)
+        public Azioni_Elfo(SqlConnection conn, string Tipo_Account)
         {
             InitializeComponent();
             connection = conn;
@@ -22,20 +22,20 @@ namespace ProgettoNatale
 
         private void View_Kids_Click(object sender, EventArgs e)
         {
-            Azioni azioni = new Azioni(connection);
+            Azioni azioni = new Azioni(connection, "Amministratore");
             azioni.Insert_Kids(connection);
 
-            Bambini bambini = new Bambini(connection);
+            Bambini bambini = new Bambini(connection, "Lavoratore");
             this.Hide();
             bambini.Show();
         }
 
         private void View_Gifts_Click(object sender, EventArgs e)
         {
-            Azioni azioni = new Azioni(connection);
+            Azioni azioni = new Azioni(connection, "Amministratore");
             azioni.Insert_Gifts(connection);
 
-            Regali regali = new Regali(connection);
+            Regali regali = new Regali(connection, "Lavoratore");
             this.Hide();
             regali.Show();
         }

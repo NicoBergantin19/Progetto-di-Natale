@@ -45,14 +45,14 @@ namespace ProgettoNatale
                 MessageBox.Show(error.Message);
             }
 
-            Azioni_Elfo azioni_Elfo = new Azioni_Elfo(connection);
+            Azioni_Elfo azioni_Elfo = new Azioni_Elfo(connection, "Lavoratore");
             azioni_Elfo.Show();
             this.Hide();
         }
 
         private void Back_Click(object sender, EventArgs e)
         {
-            Azioni_Elfo azioni_Elfo = new Azioni_Elfo(connection);
+            Azioni_Elfo azioni_Elfo = new Azioni_Elfo(connection, "Lavoratore");
             this.Close();
             azioni_Elfo.Show();
         }

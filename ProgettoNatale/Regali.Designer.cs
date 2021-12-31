@@ -61,7 +61,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(613, 471);
+            this.dataGridView1.Size = new System.Drawing.Size(668, 471);
             this.dataGridView1.TabIndex = 0;
             // 
             // label2
@@ -85,7 +85,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(12, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 61);
+            this.label1.Size = new System.Drawing.Size(327, 58);
             this.label1.TabIndex = 1;
             this.label1.Text = "LISTA DI REGALI:";
             // 
@@ -178,7 +178,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(10, 163);
+            this.textBox5.Location = new System.Drawing.Point(13, 50);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(185, 22);
@@ -198,7 +198,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(10, 106);
+            this.textBox6.Location = new System.Drawing.Point(13, 106);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(185, 22);
@@ -216,6 +216,7 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "AGGIUNGI";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label9
             // 
@@ -231,7 +232,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(12, 50);
+            this.textBox7.Location = new System.Drawing.Point(13, 163);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(185, 22);
@@ -249,6 +250,7 @@
             this.button2.TabIndex = 26;
             this.button2.Text = "TORNA SULLA HOME";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Regali
             // 

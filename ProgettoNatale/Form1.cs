@@ -96,13 +96,13 @@ namespace ProgettoNatale
                 {
                     case "Amministratore":
                         this.Hide();
-                        Azioni aa = new Azioni(connectionTabelle);
+                        Azioni aa = new Azioni(connectionTabelle, "Amministratore");
                         aa.Show();
                         break;
 
                     case "Lavoratore":
                         this.Hide();
-                        Azioni_Elfo ae = new Azioni_Elfo(connectionTabelle);
+                        Azioni_Elfo ae = new Azioni_Elfo(connectionTabelle, "Lavoratore");
                         ae.Show();
                         break;
                 }

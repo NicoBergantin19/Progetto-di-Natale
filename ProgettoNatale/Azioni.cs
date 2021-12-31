@@ -16,7 +16,7 @@ namespace ProgettoNatale
     public partial class Azioni : Form
     {
         SqlConnection connection;
-        public Azioni(SqlConnection conn)
+        public Azioni(SqlConnection conn, string Tipo_Account)
         {
             InitializeComponent();
             connection = conn;
@@ -30,7 +30,7 @@ namespace ProgettoNatale
         private void View_Kids_Click(object sender, EventArgs e) //Inserimento dati dei bambini quando si clicca
         {
             Insert_Kids(connection);
-            Bambini bambini = new Bambini(connection);
+            Bambini bambini = new Bambini(connection, "Amministratore");
             bambini.Show();
             this.Hide();
         }
@@ -38,7 +38,7 @@ namespace ProgettoNatale
         private void View_Gifts_Click(object sender, EventArgs e) //Inserimento dati dei regali quando si clicca
         {
             Insert_Gifts(connection);   
-            Regali form = new Regali(connection);
+            Regali form = new Regali(connection, "Amministratore");
             form.Show();
             this.Hide();
         }
@@ -75,11 +75,12 @@ namespace ProgettoNatale
             //Controllo se la tabella esiste già, se esiste non inserisce i nomi
             if (dt.Rows[0][0].ToString() == "0")
             {
+                MessageBox.Show("Sto generando i bambini, aspetta un attimo", "Informazione:", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Aggiungi_Nazioni(connection);
                 List<Bambino> Bambini_Sfruttati = new List<Bambino>();
                 Random rand = new Random(DateTime.Now.Second);
                 RandomName nameGen = new RandomName(rand);
-                List<string> Names = nameGen.RandomNames(50000000, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
+                List<string> Names = nameGen.RandomNames(50000, 0);  //Generazione di nomi e cognomi dei bambini ----> RandomName.cs
                 Random rnd = new Random();
                 foreach (string name in Names)
                 {
