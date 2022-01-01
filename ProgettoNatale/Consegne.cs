@@ -20,11 +20,31 @@ namespace ProgettoNatale
             connection = conn;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)  //Home
         {
             Azioni aa = new Azioni(connection, "Amministratore");
             aa.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)  //Mappa
+        {
+            Mappa mappa = new Mappa(connection);
+            mappa.Show();
+            this.Hide();
+        }
+
+        private void Consegne_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //////////////////////////////////METODI///////////////////////////////////////////////////////
+        internal void Assegna_Regalo()
+        {
+            string query = "SELECT "
+        }
+
     }
 }

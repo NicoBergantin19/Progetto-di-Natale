@@ -26,5 +26,13 @@ namespace ProgettoNatale
             aa.Show();
             this.Hide();
         }
+
+        private void radioEuropa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioEuropa.Checked)
+            {
+
+            }
+        }
     }
 }

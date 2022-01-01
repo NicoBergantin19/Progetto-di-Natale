@@ -63,6 +63,7 @@ namespace ProgettoNatale
                     Nations_Table(connectionTabelle);
                     Kids_Table(connectionTabelle);
                     Gifts_Table(connectionTabelle);
+                    Assegnazione_Table(connectionTabelle);
                 }
                 catch (SqlException error)
                 {
@@ -70,6 +71,47 @@ namespace ProgettoNatale
                 }
             }
         }
+
+
+        /// <summary>
+        /// Quando il form "Accedi" si apre viene creato il database 
+        /// in automatico 
+        /// </summary>
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //Connessione al database master
+            try
+            {
+                connectionDatabase.Open();
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.ToString());
+            }
+            //Viene controllato se il database Natale esiste e se non esiste lo crea
+            string query = "IF NOT EXISTS(SELECT * FROM sys.databases where name = 'Natale') CREATE DATABASE Natale";
+            SqlCommand cmd = new SqlCommand(query, connectionDatabase);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                connectionDatabase.Close();
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show("Errore nel generare il database: " + error.ToString());
+            }
+
+            Account_Table();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Creazione_Account creazione_Account = new Creazione_Account(connectionTabelle);
+            creazione_Account.Show();
+        }
+
+
+        //////////////////////////////////////////////////////METODI//////////////////////////////////////////////////
 
         internal static string Crittografia(string text)    //Va a crittografare una stringa 
         {
@@ -83,16 +125,16 @@ namespace ProgettoNatale
             return hash.ToString();
         }
 
-        internal void Check_Account(SqlConnection connection)
+        internal void Check_Account(SqlConnection connection)   //Controlla con quale tipo di account si è effettuato l'accesso
         {
             string passCrip = Crittografia(textBox2.Text);
             //Attraverso la select cerca nella tabella i dati inseriti dall'utente
             SqlDataAdapter sda = new SqlDataAdapter($"SELECT Tipo_Account FROM Account WHERE Username= '{textBox1.Text}' AND Password='{passCrip}'", connection);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            if (dt.Rows.Count == 1)
+            if (dt.Rows.Count == 1) //Se la tabella creata con le credenziali inserite, ritorna 1 vuol dire che l'account esiste
             {
-                switch (dt.Rows[0]["Tipo_Account"].ToString())
+                switch (dt.Rows[0]["Tipo_Account"].ToString())  //Controlla il livello di account di quella determinata persona
                 {
                     case "Amministratore":
                         this.Hide();
@@ -112,9 +154,9 @@ namespace ProgettoNatale
                 MessageBox.Show("Username o password non valido", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-        }
+        }   
 
-        internal void Gifts_Table(SqlConnection connection)
+        internal void Gifts_Table(SqlConnection connection)     //Creazione tabella "Regali"
         {
             string query = @"SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Regali';"; //query per vedere se esiste una tabella chiamata "Regali"
                                                                                                     //se il reader restituisce delle righe vuol dire che esiste
@@ -137,7 +179,7 @@ namespace ProgettoNatale
             }
             else
                 reader.Close();
-        }
+        }   
 
         internal void Nations_Table(SqlConnection connection)   //Creazione della tabella "Nazioni" 
         {
@@ -188,7 +230,7 @@ namespace ProgettoNatale
                 reader.Close();
         }
 
-        internal void Account_Table()
+        internal void Account_Table()   //Creazione tabella "Account"
         {
             try
             {
@@ -223,41 +265,22 @@ namespace ProgettoNatale
             connectionTabelle.Close();
         }
 
-        /// <summary>
-        /// Quando il form "Accedi" si apre viene creato il database 
-        /// in automatico 
-        /// </summary>
-        private void Form1_Load(object sender, EventArgs e)
+        internal void Assegnazione_Table(SqlConnection connection)  //Creazione tabella "Assegnazione" 
         {
-            //Connessione al database master
-            try
+            SqlCommand controllo = new SqlCommand("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Assegnazione';", connection);
+            SqlDataReader reader = controllo.ExecuteReader();
+            if (reader.HasRows == false)    //Controllo esistenza tabella
             {
-                connectionDatabase.Open();
-            }
-            catch (SqlException error)
-            {
-                MessageBox.Show(error.ToString());
-            }
-            //Viene controllato se il database Natale esiste e se non esiste lo crea
-            string query = "IF NOT EXISTS(SELECT * FROM sys.databases where name = 'Natale') CREATE DATABASE Natale";
-            SqlCommand cmd = new SqlCommand(query, connectionDatabase);
-            try
-            {
+                reader.Close();
+                controllo.Cancel();
+                SqlCommand cmd = new SqlCommand("CREATE TABLE Assegnazione (ID_Assegnazione int IDENTITY(1,1), Bambino varchar(MAX), Regalo int);", connection);
                 cmd.ExecuteNonQuery();
-                connectionDatabase.Close();
             }
-            catch (SqlException error)
+            else
             {
-                MessageBox.Show("Errore nel generare il database: " + error.ToString());
+                reader.Close();
+                controllo.Cancel();
             }
-
-            Account_Table();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Creazione_Account creazione_Account = new Creazione_Account(connectionTabelle);
-            creazione_Account.Show();
         }
     }
 }

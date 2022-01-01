@@ -86,6 +86,7 @@
             this.radioAmerica.TabStop = true;
             this.radioAmerica.Text = "America";
             this.radioAmerica.UseVisualStyleBackColor = false;
+            this.radioAmerica.Click += new System.EventHandler(this.radioEuropa_CheckedChanged);
             // 
             // radioAfrica
             // 
@@ -99,6 +100,7 @@
             this.radioAfrica.TabStop = true;
             this.radioAfrica.Text = "Africa";
             this.radioAfrica.UseVisualStyleBackColor = false;
+            this.radioAfrica.Click += new System.EventHandler(this.radioEuropa_CheckedChanged);
             // 
             // radioEuropa
             // 
@@ -112,6 +114,7 @@
             this.radioEuropa.TabStop = true;
             this.radioEuropa.Text = "Europa";
             this.radioEuropa.UseVisualStyleBackColor = false;
+            this.radioEuropa.CheckedChanged += new System.EventHandler(this.radioEuropa_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -125,6 +128,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Asia";
             this.radioButton4.UseVisualStyleBackColor = false;
+            this.radioButton4.Click += new System.EventHandler(this.radioEuropa_CheckedChanged);
             // 
             // radioOceania
             // 
@@ -138,6 +142,7 @@
             this.radioOceania.TabStop = true;
             this.radioOceania.Text = "Oceania";
             this.radioOceania.UseVisualStyleBackColor = false;
+            this.radioOceania.Click += new System.EventHandler(this.radioEuropa_CheckedChanged);
             // 
             // button3
             // 

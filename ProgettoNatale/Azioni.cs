@@ -51,7 +51,9 @@ namespace ProgettoNatale
         /// </summary>
         private void button1_Click(object sender, EventArgs e)  //See_Map
         {
-
+            Mappa mappa = new Mappa(connection);
+            mappa.Show();
+            this.Hide();
         }
 
         ////////////////////////////////////////////////////////////////Metodi///////////////////////////////////////////////////////////////////////////////

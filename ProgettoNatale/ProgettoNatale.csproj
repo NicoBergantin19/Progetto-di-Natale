@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssegnaRegalo.cs" />
     <Compile Include="Azioni.cs">
       <SubType>Form</SubType>
     </Compile>
