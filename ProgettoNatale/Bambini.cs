@@ -57,13 +57,19 @@ namespace ProgettoNatale
             if (String.IsNullOrWhiteSpace(textBox1.Text) || String.IsNullOrWhiteSpace(textBox2.Text) || 
                 String.IsNullOrWhiteSpace(textBox3.Text) || String.IsNullOrWhiteSpace(comboBox1.Text))
             {
+                
                 MessageBox.Show("Manca da inserire qualche dato", "Errore:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            SqlCommand cmd = new SqlCommand($"INSERT INTO Bambini (Nome, Cognome, AGE, Nazione) VALUES ('{textBox1.Text}', '{textBox2.Text}', {Convert.ToInt32(textBox3.Text)}, '{comboBox1.Text}'", connection);
+            if (Convert.ToInt32(textBox3.Text) > 9 || Convert.ToInt32(textBox3.Text) < 0)
+            {
+                MessageBox.Show("Inserire un'età che sia maggiore di 0 ma minore di 9", "Errore:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            SqlCommand cmd = new SqlCommand($"INSERT INTO Bambini (Nome, Cognome, AGE, Nazione, Bonta) VALUES ('{textBox1.Text}', '{textBox2.Text}', {Convert.ToInt32(textBox3.Text)}, '{comboBox1.Text}', RAND()*(100-0+1)+0)", connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Bambino inserito correttamente", "Information:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Visualizza("SELECT * FROM Bambini");
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -74,9 +80,10 @@ namespace ProgettoNatale
                 return;
             }
 
-            SqlCommand cmd = new SqlCommand($"DELETE FROM Bambini WHERE Nome = '{textBox1.Text}' AND Cognome = '{textBox2.Text}' AND AGE = {Convert.ToInt32(textBox3.Text)} AND Nazione = '{comboBox1.Text}';");
+            SqlCommand cmd = new SqlCommand($"DELETE FROM Bambini WHERE Nome = '{textBox1.Text}' AND Cognome = '{textBox2.Text}' AND AGE = {Convert.ToInt32(textBox3.Text)} AND Nazione = '{comboBox1.Text}';", connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Bambino eliminato dal database correttamente", "Information:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Visualizza("SELECT * FROM Bambini");
         }
 
         ////////////////////////////////////////////////////////////////METODI/////////////////////////////////////////////////////////////

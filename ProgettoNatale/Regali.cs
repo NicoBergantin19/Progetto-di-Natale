@@ -67,6 +67,11 @@ namespace ProgettoNatale
                 MessageBox.Show("Manca da inserire qualche dato", "Errore:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return; 
             }
+            if (Convert.ToInt32(textBox7.Text) < 0 || Convert.ToInt32(textBox7.Text) > 100)
+            {
+                MessageBox.Show("La bontà minima deve essere un valore compreso tra 0 e 100", "Errore:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             SqlCommand cmd = new SqlCommand($"INSERT INTO Regali (Tipo, Categoria, Bonta) VALUES ('{textBox5.Text}', '{textBox6.Text}', {Convert.ToInt32(textBox7.Text)});", connection);
             cmd.ExecuteNonQuery();
             MessageBox.Show("L'oggetto è stato inserito correttamente");

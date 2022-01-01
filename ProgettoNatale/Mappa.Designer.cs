@@ -31,11 +31,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioAmerica = new System.Windows.Forms.RadioButton();
+            this.radioAfrica = new System.Windows.Forms.RadioButton();
+            this.radioEuropa = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioOceania = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,44 +74,44 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Mappa:";
             // 
-            // radioButton1
+            // radioAmerica
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.White;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(208, 286);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(87, 27);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "America";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioAmerica.AutoSize = true;
+            this.radioAmerica.BackColor = System.Drawing.Color.White;
+            this.radioAmerica.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioAmerica.Location = new System.Drawing.Point(208, 286);
+            this.radioAmerica.Name = "radioAmerica";
+            this.radioAmerica.Size = new System.Drawing.Size(87, 27);
+            this.radioAmerica.TabIndex = 9;
+            this.radioAmerica.TabStop = true;
+            this.radioAmerica.Text = "America";
+            this.radioAmerica.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // radioAfrica
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.White;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(456, 397);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 27);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Africa";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioAfrica.AutoSize = true;
+            this.radioAfrica.BackColor = System.Drawing.Color.White;
+            this.radioAfrica.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioAfrica.Location = new System.Drawing.Point(456, 397);
+            this.radioAfrica.Name = "radioAfrica";
+            this.radioAfrica.Size = new System.Drawing.Size(72, 27);
+            this.radioAfrica.TabIndex = 10;
+            this.radioAfrica.TabStop = true;
+            this.radioAfrica.Text = "Africa";
+            this.radioAfrica.UseVisualStyleBackColor = false;
             // 
-            // radioButton3
+            // radioEuropa
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.White;
-            this.radioButton3.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(437, 263);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(78, 27);
-            this.radioButton3.TabIndex = 11;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Europa";
-            this.radioButton3.UseVisualStyleBackColor = false;
+            this.radioEuropa.AutoSize = true;
+            this.radioEuropa.BackColor = System.Drawing.Color.White;
+            this.radioEuropa.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioEuropa.Location = new System.Drawing.Point(437, 263);
+            this.radioEuropa.Name = "radioEuropa";
+            this.radioEuropa.Size = new System.Drawing.Size(78, 27);
+            this.radioEuropa.TabIndex = 11;
+            this.radioEuropa.TabStop = true;
+            this.radioEuropa.Text = "Europa";
+            this.radioEuropa.UseVisualStyleBackColor = false;
             // 
             // radioButton4
             // 
@@ -126,18 +126,18 @@
             this.radioButton4.Text = "Asia";
             this.radioButton4.UseVisualStyleBackColor = false;
             // 
-            // radioButton5
+            // radioOceania
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackColor = System.Drawing.Color.White;
-            this.radioButton5.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(683, 431);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(84, 27);
-            this.radioButton5.TabIndex = 13;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Oceania";
-            this.radioButton5.UseVisualStyleBackColor = false;
+            this.radioOceania.AutoSize = true;
+            this.radioOceania.BackColor = System.Drawing.Color.White;
+            this.radioOceania.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioOceania.Location = new System.Drawing.Point(683, 431);
+            this.radioOceania.Name = "radioOceania";
+            this.radioOceania.Size = new System.Drawing.Size(84, 27);
+            this.radioOceania.TabIndex = 13;
+            this.radioOceania.TabStop = true;
+            this.radioOceania.Text = "Oceania";
+            this.radioOceania.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -161,11 +161,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1002, 702);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.radioButton5);
+            this.Controls.Add(this.radioOceania);
             this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioEuropa);
+            this.Controls.Add(this.radioAfrica);
+            this.Controls.Add(this.radioAmerica);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -182,11 +182,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioAmerica;
+        private System.Windows.Forms.RadioButton radioAfrica;
+        private System.Windows.Forms.RadioButton radioEuropa;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioOceania;
         private System.Windows.Forms.Button button3;
     }
 }
