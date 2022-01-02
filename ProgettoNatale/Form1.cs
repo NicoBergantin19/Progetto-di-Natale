@@ -72,7 +72,6 @@ namespace ProgettoNatale
             }
         }
 
-
         /// <summary>
         /// Quando il form "Accedi" si apre viene creato il database 
         /// in automatico 
@@ -215,7 +214,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_bambini = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,AGE int NOT NULL, Nazione varchar(30), Bonta int NOT NULL, PRIMARY KEY(ID_Bambino));";
+                string tab_bambini = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,AGE int NOT NULL, Nazione varchar(MAX), Bonta int NOT NULL, PRIMARY KEY(ID_Bambino));";
                 SqlCommand cmd = new SqlCommand(tab_bambini, connection);
                 try
                 {

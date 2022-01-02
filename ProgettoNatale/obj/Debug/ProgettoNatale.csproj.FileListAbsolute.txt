@@ -47,3 +47,7 @@ C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Azioni
 C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Consegne.resources
 C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Impostazioni_Profilo.resources
 C:\Informatica\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Mappa.resources
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Azioni_Elfo.resources
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Consegne.resources
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Impostazioni_Profilo.resources
+D:\Programmi\Programmi seri\ProgettoNatale\Progetto-di-Natale\ProgettoNatale\obj\Debug\ProgettoNatale.Mappa.resources

@@ -65,6 +65,8 @@ namespace ProgettoNatale
 
         internal void Insert_Kids(SqlConnection connection) //Generazione e inserimento bambini
         {
+            List<Nazioni> SecondoMe = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
+            Random randNazione = new Random();
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Bambini", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
             sda.Fill(dt);
@@ -83,7 +85,8 @@ namespace ProgettoNatale
                     string[] arrGay = name.Split(' ');  //Divide i nomi dai cognomi 
                     int eta = rnd.Next(1, 9);
                     int bonta = rnd.Next(0, 101);
-                    string query = $"INSERT INTO Bambini (Nome, Cognome, AGE, Bonta) VALUES ('{arrGay[0]}', '{arrGay[1]}', {eta}, {bonta});";
+                    string nazione = SecondoMe[randNazione.Next(SecondoMe.Count)].Nome;
+                    string query = $"INSERT INTO Bambini (Nome, Cognome, AGE, Nazione, Bonta) VALUES ('{arrGay[0]}', '{arrGay[1]}', {eta}, '{nazione}', {bonta});";
                     SqlCommand command = new SqlCommand(query, connection);
                     try
                     {
@@ -113,13 +116,6 @@ namespace ProgettoNatale
                     cmd.ExecuteNonQuery();
                 }
             }
-        }
-
-        internal int Nazioni_Bambini(SqlConnection connection)
-        {
-            List<Nazioni> SecondoMe = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
-            Random rand;
-            SecondoMe.Add()
         }
     }
 
