@@ -43,13 +43,7 @@ namespace ProgettoNatale
             this.Hide();
         }
 
-        /// <summary>
-        /// La mappa sarà composta da un dato orario e una tabella con i bambini e i regali,
-        /// l'orario è collegato ad una certa nazione, sarà presente un bottone che modifica l'orario 
-        /// mandandolo avanti di un'ora. Quindi le tabelle vengono aggiornate togliendo i bambini 
-        /// che hanno ricevuto il regalo in quella determinata nazione.
-        /// </summary>
-        private void button1_Click(object sender, EventArgs e)  //See_Map
+        private void button1_Click(object sender, EventArgs e)  //Apre il form della mappa
         {
             Mappa mappa = new Mappa(connection);
             mappa.Show();
@@ -58,7 +52,7 @@ namespace ProgettoNatale
 
         ////////////////////////////////////////////////////////////////Metodi///////////////////////////////////////////////////////////////////////////////
 
-        internal void Aggiungi_Nazioni(SqlConnection connection)
+        internal void Insert_Nazioni(SqlConnection connection)  //Inserisce le nazioni nell'apposita tabella da json
         {
             List<Nazioni> Dc = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
             foreach (Nazioni dp in Dc)
@@ -69,7 +63,7 @@ namespace ProgettoNatale
             }
         }
 
-        internal void Insert_Kids(SqlConnection connection)
+        internal void Insert_Kids(SqlConnection connection) //Generazione e inserimento bambini
         {
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Bambini", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
@@ -78,7 +72,7 @@ namespace ProgettoNatale
             if (dt.Rows[0][0].ToString() == "0")
             {
                 MessageBox.Show("Sto generando i bambini, aspetta un attimo", "Informazione:", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Aggiungi_Nazioni(connection);
+                Insert_Nazioni(connection);
                 List<Bambino> Bambini_Sfruttati = new List<Bambino>();
                 Random rand = new Random(DateTime.Now.Second);
                 RandomName nameGen = new RandomName(rand);
@@ -89,8 +83,6 @@ namespace ProgettoNatale
                     string[] arrGay = name.Split(' ');  //Divide i nomi dai cognomi 
                     int eta = rnd.Next(1, 9);
                     int bonta = rnd.Next(0, 101);
-                    //Aggiungere la nazione
-                    //Bambini_Sfruttati.Add(new Bambino { Nome = arrGay[0], Cognome = arrGay[1], Eta = eta, Bonta = bonta });
                     string query = $"INSERT INTO Bambini (Nome, Cognome, AGE, Bonta) VALUES ('{arrGay[0]}', '{arrGay[1]}', {eta}, {bonta});";
                     SqlCommand command = new SqlCommand(query, connection);
                     try
@@ -105,7 +97,7 @@ namespace ProgettoNatale
             }
         }
 
-        internal void Insert_Gifts(SqlConnection connection)
+        internal void Insert_Gifts(SqlConnection connection)    //Inserimento regali da json
         {
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Regali", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
@@ -122,6 +114,13 @@ namespace ProgettoNatale
                 }
             }
         }
+
+        internal int Nazioni_Bambini(SqlConnection connection)
+        {
+            List<Nazioni> SecondoMe = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
+            Random rand;
+            SecondoMe.Add()
+        }
     }
 
     public class Bambino
@@ -133,17 +132,17 @@ namespace ProgettoNatale
         public int Bonta;
     }
 
-    public class Nazioni
-    {
-        public string Nome;
-        public string Continente;
-        public string Fuso_Orario;
-    }
-
     public class Regalo
     {
         public string Tipo;
         public string Categoria;
         public int Bonta;
+    }
+
+    public class Nazioni
+    {
+        public string Nome;
+        public string Continente;
+        public string Fuso_Orario;
     }
 }

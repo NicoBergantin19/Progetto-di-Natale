@@ -41,10 +41,6 @@ namespace ProgettoNatale
 
 
         //////////////////////////////////METODI///////////////////////////////////////////////////////
-        internal void Assegna_Regalo()
-        {
-            string query = "SELECT "
-        }
 
     }
 }
