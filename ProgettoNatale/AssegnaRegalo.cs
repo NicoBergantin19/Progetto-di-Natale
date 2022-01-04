@@ -19,4 +19,9 @@ namespace ProgettoNatale
 
         }
     }
+
+    class BambinoRegalo
+    {
+
+    }
 }

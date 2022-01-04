@@ -54,10 +54,10 @@ namespace ProgettoNatale
 
         internal void Insert_Nazioni(SqlConnection connection)  //Inserisce le nazioni nell'apposita tabella da json
         {
-            List<Nazioni> Dc = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
+            List<Nazioni> Dc = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("Nazioni.json"));
             foreach (Nazioni dp in Dc)
             {
-                string query = $"INSERT INTO Nazioni (Nome, Continente, Fuso_Orario) VALUES ('{dp.Nome}', '{dp.Continente}', '{dp.Fuso_Orario}')";
+                string query = $"INSERT INTO Nazioni (Nome, Continente, Codice) VALUES ('{dp.Nome}', '{dp.Continente}', '{dp.Codice}')";
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
             }
@@ -65,7 +65,7 @@ namespace ProgettoNatale
 
         internal void Insert_Kids(SqlConnection connection) //Generazione e inserimento bambini
         {
-            List<Nazioni> SecondoMe = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
+            List<Nazioni> SecondoMe = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("Nazioni.json"));
             Random randNazione = new Random();
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Bambini", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
@@ -74,7 +74,6 @@ namespace ProgettoNatale
             if (dt.Rows[0][0].ToString() == "0")
             {
                 MessageBox.Show("Sto generando i bambini, aspetta un attimo", "Informazione:", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Insert_Nazioni(connection);
                 List<Bambino> Bambini_Sfruttati = new List<Bambino>();
                 Random rand = new Random(DateTime.Now.Second);
                 RandomName nameGen = new RandomName(rand);
@@ -85,7 +84,7 @@ namespace ProgettoNatale
                     string[] arrGay = name.Split(' ');  //Divide i nomi dai cognomi 
                     int eta = rnd.Next(1, 9);
                     int bonta = rnd.Next(0, 101);
-                    string nazione = SecondoMe[randNazione.Next(SecondoMe.Count)].Nome;
+                    string nazione = SecondoMe[randNazione.Next(SecondoMe.Count)].Codice;
                     string query = $"INSERT INTO Bambini (Nome, Cognome, AGE, Nazione, Bonta) VALUES ('{arrGay[0]}', '{arrGay[1]}', {eta}, '{nazione}', {bonta});";
                     SqlCommand command = new SqlCommand(query, connection);
                     try
@@ -139,6 +138,6 @@ namespace ProgettoNatale
     {
         public string Nome;
         public string Continente;
-        public string Fuso_Orario;
+        public string Codice;
     }
 }

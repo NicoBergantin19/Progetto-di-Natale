@@ -56,13 +56,14 @@ namespace ProgettoNatale
                 dr.Close();
                 cmd.Cancel();
 
+
                 //Operazioni principali dell'accesso 
                 try
                 {
                     Check_Account(connectionTabelle);
-                    Nations_Table(connectionTabelle);
-                    Kids_Table(connectionTabelle);
+                    Nations_Table(connectionTabelle);                  
                     Gifts_Table(connectionTabelle);
+                    Kids_Table(connectionTabelle);
                     Assegnazione_Table(connectionTabelle);
                 }
                 catch (SqlException error)
@@ -184,17 +185,20 @@ namespace ProgettoNatale
         {
             string query = @"SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Nazioni';"; //query per vedere se esiste una tabella chiamata "Nazioni"
                                                                                                      //se il reader restituisce delle righe vuol dire che esiste
+
+            Azioni azioni = new Azioni(connectionTabelle, "");
             SqlCommand controllo = new SqlCommand(query, connection);
             SqlDataReader reader = controllo.ExecuteReader();
             if (reader.HasRows == false)    //Controllo esistenza tabella
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_nazioni = "CREATE TABLE Nazioni(ID_Nazione int IDENTITY(1,1), Nome varchar(MAX) NOT NULL, Continente varchar(30) NOT NULL, Fuso_Orario varchar(30) NOT NULL, PRIMARY KEY(ID_Nazione));"; //query creazione tabella
+                string tab_nazioni = "CREATE TABLE Nazioni(ID_Nazione int IDENTITY(1,1), Nome varchar(MAX) NOT NULL, Continente varchar(30) NOT NULL, Codice varchar(30) NOT NULL, PRIMARY KEY(Codice));"; //query creazione tabella
                 SqlCommand cmd = new SqlCommand(tab_nazioni, connection);
                 try
                 {
                     cmd.ExecuteNonQuery();
+                    azioni.Insert_Nazioni(connectionTabelle);
                 }
                 catch (SqlException error)
                 {
@@ -214,7 +218,8 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                string tab_bambini = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,AGE int NOT NULL, Nazione varchar(MAX), Bonta int NOT NULL, PRIMARY KEY(ID_Bambino));";
+
+                string tab_bambini = "CREATE TABLE Bambini(ID_Bambino int IDENTITY(1,1), Nome varchar(30) NOT NULL,Cognome varchar(30) NOT NULL,AGE int NOT NULL, Nazione varchar(30), Bonta int NOT NULL, PRIMARY KEY(ID_Bambino), FOREIGN KEY (Nazione) REFERENCES Nazioni (Codice));";
                 SqlCommand cmd = new SqlCommand(tab_bambini, connection);
                 try
                 {
@@ -272,7 +277,7 @@ namespace ProgettoNatale
             {
                 reader.Close();
                 controllo.Cancel();
-                SqlCommand cmd = new SqlCommand("CREATE TABLE Assegnazione (ID_Assegnazione int IDENTITY(1,1), Bambino varchar(MAX), Regalo int);", connection);
+                SqlCommand cmd = new SqlCommand("CREATE TABLE Assegnazione (ID_Assegnazione int IDENTITY(1,1), Bambino int, Regalo int, FOREIGN KEY (Regalo) REFERENCES Regali (ID_Regalo), FOREIGN KEY (Bambino) REFERENCES Bambini (ID_Bambino));", connection);
                 cmd.ExecuteNonQuery();
             }
             else
