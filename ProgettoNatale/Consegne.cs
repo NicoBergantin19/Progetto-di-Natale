@@ -37,6 +37,7 @@ namespace ProgettoNatale
         private void Consegne_Load(object sender, EventArgs e)
         {
             Controllo(connection);
+            Visualizza("SELECT * FROM Assegnazione");
         }
 
 
@@ -65,7 +66,6 @@ namespace ProgettoNatale
                 AssegnaRegalo assegnazione = new AssegnaRegalo();
                 assegnazione.Assegna(connection);
                 this.Hide();
-                Visualizza("SELECT * FROM Assegnazione");
             }
         }
     }

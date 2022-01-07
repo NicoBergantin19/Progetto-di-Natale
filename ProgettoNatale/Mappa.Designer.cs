@@ -44,9 +44,10 @@
             // 
             this.pictureBox1.BackgroundImage = global::ProgettoNatale.Properties.Resources.WhatsApp_Image_2021_12_29_at_22_53_23;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(67, 157);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 128);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(761, 402);
+            this.pictureBox1.Size = new System.Drawing.Size(571, 327);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -56,9 +57,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(190, 18);
+            this.label1.Location = new System.Drawing.Point(142, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(585, 105);
+            this.label1.Size = new System.Drawing.Size(469, 85);
             this.label1.TabIndex = 7;
             this.label1.Text = "Christmas System";
             // 
@@ -68,9 +70,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(56, 93);
+            this.label2.Location = new System.Drawing.Point(42, 76);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 58);
+            this.label2.Size = new System.Drawing.Size(120, 47);
             this.label2.TabIndex = 8;
             this.label2.Text = "Mappa:";
             // 
@@ -79,9 +82,10 @@
             this.radioAmerica.AutoSize = true;
             this.radioAmerica.BackColor = System.Drawing.Color.White;
             this.radioAmerica.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioAmerica.Location = new System.Drawing.Point(208, 286);
+            this.radioAmerica.Location = new System.Drawing.Point(156, 232);
+            this.radioAmerica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioAmerica.Name = "radioAmerica";
-            this.radioAmerica.Size = new System.Drawing.Size(87, 27);
+            this.radioAmerica.Size = new System.Drawing.Size(74, 23);
             this.radioAmerica.TabIndex = 9;
             this.radioAmerica.TabStop = true;
             this.radioAmerica.Text = "America";
@@ -93,9 +97,10 @@
             this.radioAfrica.AutoSize = true;
             this.radioAfrica.BackColor = System.Drawing.Color.White;
             this.radioAfrica.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioAfrica.Location = new System.Drawing.Point(456, 397);
+            this.radioAfrica.Location = new System.Drawing.Point(342, 323);
+            this.radioAfrica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioAfrica.Name = "radioAfrica";
-            this.radioAfrica.Size = new System.Drawing.Size(72, 27);
+            this.radioAfrica.Size = new System.Drawing.Size(61, 23);
             this.radioAfrica.TabIndex = 10;
             this.radioAfrica.TabStop = true;
             this.radioAfrica.Text = "Africa";
@@ -107,9 +112,10 @@
             this.radioEuropa.AutoSize = true;
             this.radioEuropa.BackColor = System.Drawing.Color.White;
             this.radioEuropa.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioEuropa.Location = new System.Drawing.Point(437, 263);
+            this.radioEuropa.Location = new System.Drawing.Point(328, 214);
+            this.radioEuropa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioEuropa.Name = "radioEuropa";
-            this.radioEuropa.Size = new System.Drawing.Size(78, 27);
+            this.radioEuropa.Size = new System.Drawing.Size(67, 23);
             this.radioEuropa.TabIndex = 11;
             this.radioEuropa.TabStop = true;
             this.radioEuropa.Text = "Europa";
@@ -121,9 +127,10 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackColor = System.Drawing.Color.White;
             this.radioButton4.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(611, 286);
+            this.radioButton4.Location = new System.Drawing.Point(458, 232);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(59, 27);
+            this.radioButton4.Size = new System.Drawing.Size(50, 23);
             this.radioButton4.TabIndex = 12;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Asia";
@@ -135,9 +142,10 @@
             this.radioOceania.AutoSize = true;
             this.radioOceania.BackColor = System.Drawing.Color.White;
             this.radioOceania.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioOceania.Location = new System.Drawing.Point(683, 431);
+            this.radioOceania.Location = new System.Drawing.Point(512, 350);
+            this.radioOceania.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioOceania.Name = "radioOceania";
-            this.radioOceania.Size = new System.Drawing.Size(84, 27);
+            this.radioOceania.Size = new System.Drawing.Size(70, 23);
             this.radioOceania.TabIndex = 13;
             this.radioOceania.TabStop = true;
             this.radioOceania.Text = "Oceania";
@@ -149,10 +157,10 @@
             this.button3.BackColor = System.Drawing.Color.Chocolate;
             this.button3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(726, 612);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(544, 497);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(264, 79);
+            this.button3.Size = new System.Drawing.Size(198, 64);
             this.button3.TabIndex = 21;
             this.button3.Text = "TORNA SULLA HOME";
             this.button3.UseVisualStyleBackColor = false;
@@ -160,11 +168,11 @@
             // 
             // Mappa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProgettoNatale.Properties.Resources.WhatsApp_Image_2021_12_29_at_21_48_39;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1002, 702);
+            this.ClientSize = new System.Drawing.Size(752, 570);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.radioOceania);
             this.Controls.Add(this.radioButton4);
@@ -174,8 +182,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Mappa";
             this.Text = "Mappa";
+            this.Load += new System.EventHandler(this.Mappa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
