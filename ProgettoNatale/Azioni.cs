@@ -120,6 +120,7 @@ namespace ProgettoNatale
 
     public class Bambino
     {
+        public int ID;
         public string Nome;
         public string Cognome;
         public int Eta;
@@ -129,6 +130,7 @@ namespace ProgettoNatale
 
     public class Regalo
     {
+        public int ID;
         public string Tipo;
         public string Categoria;
         public int Bonta;

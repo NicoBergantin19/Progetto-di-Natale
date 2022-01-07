@@ -1398,5 +1398,15 @@
     "Tipo": "Vacanza alle Maldive",
     "Categoria": "Viaggi",
     "Bonta": "98"
+  },
+  {
+    "Tipo": "Peluche Peepi",
+    "Categoria": "Speciale",
+    "Bonta": "100"
+  },
+  {
+    "Tipo": "Carbone",
+    "Categoria": "Carbone",
+    "Bonta": "0"
   }
 ]

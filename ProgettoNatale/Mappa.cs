@@ -31,7 +31,8 @@ namespace ProgettoNatale
         {
             if (radioEuropa.Checked)
             {
-
+                Consegne consegne = new Consegne(connection);
+                consegne.Show();
             }
         }
     }

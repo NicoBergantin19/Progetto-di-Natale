@@ -36,11 +36,37 @@ namespace ProgettoNatale
 
         private void Consegne_Load(object sender, EventArgs e)
         {
-
+            Controllo(connection);
         }
 
 
         //////////////////////////////////METODI///////////////////////////////////////////////////////
+        internal void Visualizza(string QuerySql)
+        {
+            SqlCommand cmd = new SqlCommand(QuerySql, connection);
+            SqlDataReader dataReader;
+            DataTable dt = new DataTable();
+            dataReader = cmd.ExecuteReader();
+            dt.Load(dataReader);
+            dataGridView1.DataSource = dt;
 
+            dataReader.Close();
+        }
+
+        internal void Controllo(SqlConnection connection)
+        {
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Assegnazione", connection);
+            DataTable dt = new DataTable(); //Crea una tabella virtuale
+            sda.Fill(dt);
+            //Controllo se la tabella esiste già, se esiste non inserisce i nomi
+            if (dt.Rows[0][0].ToString() == "0")
+            {
+                MessageBox.Show("Sto assegnando i regali ai bambini", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                AssegnaRegalo assegnazione = new AssegnaRegalo();
+                assegnazione.Assegna(connection);
+                this.Hide();
+                Visualizza("SELECT * FROM Assegnazione");
+            }
+        }
     }
 }
