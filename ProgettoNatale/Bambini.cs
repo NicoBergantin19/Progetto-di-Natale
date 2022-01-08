@@ -102,11 +102,16 @@ namespace ProgettoNatale
 
         internal void ComboBox_Add()
         {
-            List<Nazioni> nazioni = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("ListaNazioni.json"));
+            List<Nazioni> nazioni = JsonConvert.DeserializeObject<List<Nazioni>>(File.ReadAllText("Nazioni.json"));
             foreach (Nazioni aaa in nazioni)
             {
-                comboBox1.Items.Add(aaa.Nome);
+                comboBox1.Items.Add(aaa.Codice);
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
