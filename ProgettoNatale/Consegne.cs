@@ -59,7 +59,7 @@ namespace ProgettoNatale
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Assegnazione", connection);
             DataTable dt = new DataTable(); //Crea una tabella virtuale
             sda.Fill(dt);
-            //Controllo se la tabella esiste già, se esiste non inserisce i nomi
+            //Controllo se la tabella esiste già, se esiste non inserisce i dati
             if (dt.Rows[0][0].ToString() == "0")
             {
                 MessageBox.Show("Sto assegnando i regali ai bambini", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
