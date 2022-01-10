@@ -14,10 +14,12 @@ namespace ProgettoNatale
     public partial class Consegne : Form
     {
         SqlConnection connection;
-        public Consegne(SqlConnection conn)
+        string continente;
+        public Consegne(SqlConnection conn, string cont)
         {
             InitializeComponent();
             connection = conn;
+            continente = cont;
         }
 
         private void button3_Click(object sender, EventArgs e)  //Home
@@ -37,23 +39,11 @@ namespace ProgettoNatale
         private void Consegne_Load(object sender, EventArgs e)
         {
             Controllo(connection);
-            Visualizza("SELECT * FROM Assegnazione");
+            DividiContinente(continente);
         }
 
 
         //////////////////////////////////METODI///////////////////////////////////////////////////////
-        internal void Visualizza(string QuerySql)
-        {
-            SqlCommand cmd = new SqlCommand(QuerySql, connection);
-            SqlDataReader dataReader;
-            DataTable dt = new DataTable();
-            dataReader = cmd.ExecuteReader();
-            dt.Load(dataReader);
-            dataGridView1.DataSource = dt;
-
-            dataReader.Close();
-        }
-
         internal void Controllo(SqlConnection connection)
         {
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM Assegnazione", connection);
@@ -67,6 +57,22 @@ namespace ProgettoNatale
                 assegnazione.Assegna(connection);
                 this.Hide();
             }
+        }
+
+        internal void DividiContinente(string continente)
+        {
+            string query = $@"SELECT Assegnazione.ID_Assegnazione, Assegnazione.Bambino, Assegnazione.Regalo FROM Nazioni
+                            INNER JOIN Bambini ON Nazioni.Codice = Bambini.Nazione AND Nazioni.Continente = '{continente}'
+                            INNER JOIN Assegnazione ON Assegnazione.Bambino = Bambini.ID_Bambino";
+
+            SqlCommand cmd = new SqlCommand(query, connection);
+            SqlDataReader dataReader;
+            DataTable dt = new DataTable();
+            dataReader = cmd.ExecuteReader();
+            dt.Load(dataReader);
+            dataGridView1.DataSource = dt;
+
+            dataReader.Close();
         }
     }
 }

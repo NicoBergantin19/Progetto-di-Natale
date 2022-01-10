@@ -27,18 +27,50 @@ namespace ProgettoNatale
             this.Hide();
         }
 
-        private void radioEuropa_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioEuropa.Checked)
-            {
-                Consegne consegne = new Consegne(connection);
-                consegne.Show();                
-            }
-        }
-
         private void Mappa_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioEuropa_Click(object sender, EventArgs e)
+        {
+            MostraContinente("Europe");
+        }
+
+        private void radioAfrica_Click(object sender, EventArgs e)
+        {
+            MostraContinente("Africa");
+        }
+
+        private void radioAsia_Click(object sender, EventArgs e)
+        {
+            MostraContinente("Asia");
+        }
+
+        private void radioOceania_Click(object sender, EventArgs e)
+        {
+            MostraContinente("Oceania");
+        }       
+
+        internal void MostraContinente(string continente)
+        {
+            Consegne consegne = new Consegne(connection, continente);
+            consegne.Show();
+        }
+
+        private void radioAmerica_Click_1(object sender, EventArgs e)
+        {
+            MostraContinente("North America");
+        }
+
+        private void radioSUUU_Click(object sender, EventArgs e)
+        {
+            MostraContinente("South America");
+        }
+
+        private void radioAntartica_Click(object sender, EventArgs e)
+        {
+            MostraContinente("Antarctica");
         }
     }
 }
