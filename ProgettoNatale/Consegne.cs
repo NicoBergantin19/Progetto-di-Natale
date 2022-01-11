@@ -50,6 +50,7 @@ namespace ProgettoNatale
                 cmd.ExecuteNonQuery();
                 textBox1.Text = null;
                 MessageBox.Show("Consegna effettuata con successo!");
+                DividiContinente(continente);
             }
             catch (SqlException ex)
             {
@@ -88,7 +89,5 @@ namespace ProgettoNatale
 
             dataReader.Close();
         }
-
-        
     }
 }
