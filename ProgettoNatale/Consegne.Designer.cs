@@ -105,6 +105,7 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "EFFETTUA CONSEGNA";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -114,9 +115,9 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(7, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 31);
+            this.label1.Size = new System.Drawing.Size(125, 31);
             this.label1.TabIndex = 15;
-            this.label1.Text = "ID Consegna:";
+            this.label1.Text = "ID Bambino:";
             // 
             // textBox1
             // 

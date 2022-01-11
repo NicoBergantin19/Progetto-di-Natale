@@ -42,6 +42,20 @@ namespace ProgettoNatale
             DividiContinente(continente);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand($"DELETE Assegnazione WHERE Bambino={textBox1.Text}", connection);
+                cmd.ExecuteNonQuery();
+                textBox1.Text = null;
+                MessageBox.Show("Consegna effettuata con successo!");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Si è verificato un errore!\nDettagli: " + ex.ToString());
+            }
+        }
 
         //////////////////////////////////METODI///////////////////////////////////////////////////////
         internal void Controllo(SqlConnection connection)
@@ -74,5 +88,7 @@ namespace ProgettoNatale
 
             dataReader.Close();
         }
+
+        
     }
 }

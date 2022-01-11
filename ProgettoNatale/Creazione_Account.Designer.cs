@@ -46,8 +46,9 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(20, 300);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(449, 22);
             this.textBox2.TabIndex = 13;
             // 
@@ -67,7 +68,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(20, 210);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(449, 22);
             this.textBox1.TabIndex = 11;
@@ -124,7 +125,7 @@
             this.pictureBox1.BackgroundImage = global::ProgettoNatale.Properties.Resources.animated_santa_claus;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(652, 171);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(361, 122);
             this.pictureBox1.TabIndex = 15;
@@ -189,7 +190,7 @@
             this.label5.Location = new System.Drawing.Point(13, 110);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(354, 61);
+            this.label5.Size = new System.Drawing.Size(344, 58);
             this.label5.TabIndex = 28;
             this.label5.Text = "Creazione Account:";
             // 
